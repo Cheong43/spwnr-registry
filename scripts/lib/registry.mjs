@@ -90,6 +90,7 @@ export function buildRegistryIndex(repoRoot) {
     const existing = templates.get(name) ?? {
       name,
       versions: [],
+      instruction: manifest.metadata.instruction ?? '',
       description: manifest.metadata.description ?? '',
       authors: manifest.metadata.authors ?? [],
       compatibilityHosts: manifest.spec?.compatibility?.hosts ?? [],
@@ -98,6 +99,7 @@ export function buildRegistryIndex(repoRoot) {
     };
 
     existing.versions.push(manifest.metadata.version);
+    existing.instruction = manifest.metadata.instruction ?? existing.instruction;
     existing.description = manifest.metadata.description ?? existing.description;
     existing.authors = manifest.metadata.authors ?? existing.authors;
     existing.compatibilityHosts = manifest.spec?.compatibility?.hosts ?? existing.compatibilityHosts;
@@ -113,6 +115,7 @@ export function buildRegistryIndex(repoRoot) {
         name: entry.name,
         latestVersion: versions[0],
         versions,
+        instruction: entry.instruction,
         description: entry.description,
         authors: entry.authors,
         compatibilityHosts: entry.compatibilityHosts,
@@ -163,20 +166,24 @@ export function validateTemplate(repoRoot, loaded) {
     errors.push(`${relativeVersionDir}: metadata.version must match version directory`);
   }
 
-  if (!metadata.description) {
-    errors.push(`${relativeVersionDir}: metadata.description is required`);
-  }
-
   if (!authors.length) {
     errors.push(`${relativeVersionDir}: metadata.authors must contain at least one author`);
   }
 
-  if (!spec.instructions?.system) {
-    errors.push(`${relativeVersionDir}: spec.instructions.system is required`);
+  if (!metadata.instruction) {
+    errors.push(`${relativeVersionDir}: metadata.instruction is required`);
   }
 
-  if (!spec.input?.schema || !spec.output?.schema) {
-    errors.push(`${relativeVersionDir}: spec.input.schema and spec.output.schema are required`);
+  if (!spec.agent?.path) {
+    errors.push(`${relativeVersionDir}: spec.agent.path is required`);
+  }
+
+  if (typeof metadata.instruction === 'string') {
+    const trimmedInstruction = metadata.instruction.trim();
+    const length = [...trimmedInstruction].length;
+    if (length < 1 || length > 400) {
+      errors.push(`${relativeVersionDir}: metadata.instruction must be between 1 and 400 characters`);
+    }
   }
 
   if (!hosts.length) {
@@ -199,23 +206,15 @@ export function validateTemplate(repoRoot, loaded) {
   }
 
   const expectedFiles = [
-    spec.instructions?.system,
-    spec.input?.schema,
-    spec.output?.schema,
-    spec.memory?.schema,
+    spec.agent?.path,
+    spec.schemas?.input,
+    spec.schemas?.output,
+    spec.schemas?.memory,
   ].filter(Boolean);
 
   for (const relativeFile of expectedFiles) {
     if (!existsSync(join(versionDir, relativeFile))) {
       errors.push(`${relativeVersionDir}: referenced file missing: ${relativeFile}`);
-    }
-  }
-
-  if (spec.workflow?.entry) {
-    const workflowYaml = join(versionDir, 'workflow', `${spec.workflow.entry}.yaml`);
-    const workflowYml = join(versionDir, 'workflow', `${spec.workflow.entry}.yml`);
-    if (!existsSync(workflowYaml) && !existsSync(workflowYml)) {
-      errors.push(`${relativeVersionDir}: workflow entry file is missing for ${spec.workflow.entry}`);
     }
   }
 

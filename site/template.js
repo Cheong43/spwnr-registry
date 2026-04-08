@@ -30,7 +30,7 @@ fetch('./registry-index.json')
     }
 
     templateTitle.textContent = entry.name;
-    templateDescription.textContent = entry.description ?? 'No description provided.';
+    templateDescription.textContent = entry.instruction ?? entry.description ?? 'No description provided.';
     templateSourceLink.href = entry.sourcePath;
 
     renderList(versionList, entry.versions ?? []);

@@ -15,8 +15,8 @@ It provides:
 ```text
 templates/<name>/<version>/
   subagent.yaml
-  prompts/
-  schemas/
+  agent.md
+  schemas/            # optional
   skills/
   README.md
 site/
@@ -37,8 +37,10 @@ Community templates should be submitted directly to this repository via pull req
 Rules:
 
 - create a new version directory instead of editing an existing released version
+- include `metadata.instruction` (1-400 chars)
 - include `metadata.authors`
 - include `spec.compatibility.hosts`
+- point `spec.agent.path` at the canonical `agent.md` entry
 - keep dependency declarations in `spec.dependencies.packages`
 - include a template `README.md`
 

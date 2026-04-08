@@ -4,8 +4,8 @@
 
 ## Included assets
 
-- prompt entrypoint at `prompts/system.md`
-- JSON input, output, and memory schemas
+- canonical prompt entry at `agent.md`
+- optional JSON input, output, and memory schemas
 - local helper skills for diff reading and repo navigation
 - host injection support for Claude Code, Codex, Copilot, and OpenCode
 

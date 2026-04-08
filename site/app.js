@@ -27,6 +27,7 @@ function matches(template) {
   const query = state.filters.search.trim().toLowerCase();
   const haystack = [
     template.name,
+    template.instruction,
     template.description,
     ...(template.tags ?? []),
     ...(template.compatibilityHosts ?? []),
@@ -77,7 +78,7 @@ function render() {
     article.innerHTML = `
       <p class="eyebrow">Latest ${template.latestVersion}</p>
       <h3>${template.name}</h3>
-      <p>${template.description ?? 'No description provided.'}</p>
+      <p>${template.instruction ?? template.description ?? 'No description provided.'}</p>
       <div class="pill-row">${hosts}${tags}</div>
       <p class="meta">Versions: ${(template.versions ?? []).join(', ')}</p>
       ${dependencies ? `<ul class="detail-list">${dependencies}</ul>` : ''}

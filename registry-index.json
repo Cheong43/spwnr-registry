@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T03:51:12.136Z",
+  "generatedAt": "2026-04-08T09:48:13.904Z",
   "totalTemplates": 1,
   "templates": [
     {
@@ -8,6 +8,7 @@
       "versions": [
         "0.1.0"
       ],
+      "instruction": "Review git diffs and return precise, actionable feedback.",
       "description": "Review git diff and produce actionable feedback",
       "authors": [
         {
