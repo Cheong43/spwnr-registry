@@ -32,6 +32,29 @@ export function readJson(filePath) {
   return JSON.parse(readFileSync(filePath, 'utf-8'));
 }
 
+export function listSkillEntries(skills) {
+  if (!skills) {
+    return [];
+  }
+
+  if (Array.isArray(skills.refs)) {
+    return [{ layer: 'legacy', refs: skills.refs }];
+  }
+
+  const entries = [];
+  if (Array.isArray(skills.universal)) {
+    entries.push({ layer: 'universal', refs: skills.universal });
+  }
+
+  for (const [host, refs] of Object.entries(skills.hosts ?? {})) {
+    if (Array.isArray(refs)) {
+      entries.push({ layer: host, refs });
+    }
+  }
+
+  return entries;
+}
+
 export function listTemplateVersionDirs(repoRoot) {
   const templatesRoot = join(repoRoot, 'templates');
   if (!existsSync(templatesRoot)) {
@@ -218,9 +241,19 @@ export function validateTemplate(repoRoot, loaded) {
     }
   }
 
-  for (const skill of spec.skills?.refs ?? []) {
-    if (skill.path && !existsSync(join(versionDir, skill.path))) {
-      errors.push(`${relativeVersionDir}: skill path missing for ${skill.name}: ${skill.path}`);
+  for (const { layer, refs } of listSkillEntries(spec.skills)) {
+    if (layer !== 'legacy' && layer !== 'universal') {
+      if (!ALLOWED_HOSTS.includes(layer)) {
+        errors.push(`${relativeVersionDir}: unsupported skill host layer "${layer}"`);
+      } else if (hosts.length > 0 && !hosts.includes(layer)) {
+        errors.push(`${relativeVersionDir}: skill host layer must be declared in spec.compatibility.hosts: ${layer}`);
+      }
+    }
+
+    for (const skill of refs) {
+      if (skill.path && !existsSync(join(versionDir, skill.path))) {
+        errors.push(`${relativeVersionDir}: skill path missing for ${skill.name} in ${layer}: ${skill.path}`);
+      }
     }
   }
 
