@@ -1,0 +1,43 @@
+name: Validate Templates
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Validate changed templates
+        if: github.event_name == 'pull_request'
+        run: node ./scripts/validate-templates.mjs --base-sha "${{ github.event.pull_request.base.sha }}" --head-sha "${{ github.event.pull_request.head.sha }}"
+
+      - name: Validate all templates
+        if: github.event_name != 'pull_request'
+        run: npm run validate:templates
+
+      - name: Build registry index preview
+        run: npm run build:index
+
+      - name: Upload registry preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: registry-index-preview
+          path: registry-index.json

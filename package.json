@@ -1,0 +1,15 @@
+{
+  "name": "spwnr-registry",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "validate:templates": "node ./scripts/validate-templates.mjs",
+    "build:index": "node ./scripts/build-registry-index.mjs",
+    "build:site": "node ./scripts/build-site.mjs",
+    "build": "npm run build:index && npm run build:site"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  }
+}

@@ -1,0 +1,267 @@
+:root {
+  --bg: #f3f4ef;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-strong: #ffffff;
+  --text: #10221f;
+  --muted: #526560;
+  --accent: #00594c;
+  --accent-soft: #d9eee8;
+  --accent-contrast: #f5fffb;
+  --line: rgba(13, 44, 38, 0.12);
+  --shadow: 0 24px 60px rgba(16, 49, 43, 0.12);
+  --radius: 24px;
+  --font-display: "Iowan Old Style", "Palatino Linotype", serif;
+  --font-body: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(0, 89, 76, 0.12), transparent 28%),
+    linear-gradient(180deg, #f2f5f0 0%, #eef2ea 100%);
+}
+
+a {
+  color: inherit;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 20;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.hero,
+main {
+  width: min(1120px, calc(100vw - 2rem));
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 2rem 0 1rem;
+}
+
+.hero__content {
+  padding: 3rem;
+  border-radius: 36px;
+  background:
+    linear-gradient(135deg, rgba(0, 89, 76, 0.95), rgba(15, 45, 40, 0.94)),
+    radial-gradient(circle at top right, rgba(217, 238, 232, 0.24), transparent 22%);
+  color: var(--accent-contrast);
+  box-shadow: var(--shadow);
+}
+
+.hero--compact .hero__content {
+  padding-bottom: 2.4rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.7rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.82;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  line-height: 1.05;
+}
+
+h1 {
+  max-width: 13ch;
+  font-size: clamp(2.4rem, 5vw, 4.9rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+.hero__lede,
+.meta,
+.field span,
+.detail-list,
+.prose,
+.card p {
+  line-height: 1.6;
+}
+
+.hero__lede {
+  max-width: 60ch;
+  margin: 1.25rem 0 0;
+  color: rgba(245, 255, 251, 0.88);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.85rem;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button--primary {
+  background: var(--accent-contrast);
+  color: var(--accent);
+}
+
+.button--secondary {
+  border: 1px solid rgba(245, 255, 251, 0.28);
+}
+
+main {
+  padding-bottom: 3rem;
+}
+
+.panel {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow);
+}
+
+.controls {
+  display: grid;
+  gap: 1rem;
+}
+
+.controls__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field input,
+.field select {
+  min-height: 2.85rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 45, 40, 0.16);
+  background: var(--surface-strong);
+  color: var(--text);
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.button:focus-visible {
+  outline: 3px solid #78c9b7;
+  outline-offset: 3px;
+}
+
+.section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.card-grid,
+.detail-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.detail-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card,
+.detail-card {
+  padding: 1.2rem;
+  border-radius: 22px;
+  border: 1px solid rgba(15, 45, 40, 0.12);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.card h3 {
+  font-size: 1.35rem;
+}
+
+.card p,
+.meta,
+.detail-list,
+.prose {
+  color: var(--muted);
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.8rem;
+}
+
+.pill {
+  display: inline-flex;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.88rem;
+}
+
+.detail-list,
+.prose ol {
+  padding-left: 1.2rem;
+}
+
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed rgba(15, 45, 40, 0.18);
+  border-radius: 22px;
+}
+
+@media (max-width: 720px) {
+  .hero__content {
+    padding: 2rem 1.4rem;
+  }
+
+  .panel {
+    padding: 1.2rem;
+  }
+}

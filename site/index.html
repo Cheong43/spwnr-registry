@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spwnr Registry</title>
+    <meta
+      name="description"
+      content="Official Spwnr registry for versioned subagent templates, contribution workflows, and GitHub-backed metadata."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Official Registry</p>
+        <h1>Versioned subagent templates, published straight from GitHub.</h1>
+        <p class="hero__lede">
+          Browse immutable template releases, review host compatibility, and submit new template versions through pull requests.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="./contribute.html">Contribute a template</a>
+          <a class="button button--secondary" href="https://github.com/Cheong43/spwnr-registry">Open GitHub repository</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="panel controls" aria-labelledby="browse-title">
+        <div>
+          <p class="eyebrow">Browse</p>
+          <h2 id="browse-title">Template marketplace</h2>
+        </div>
+        <form class="controls__form">
+          <label class="field">
+            <span>Search</span>
+            <input id="search-input" type="search" placeholder="review, codex, git">
+          </label>
+          <label class="field">
+            <span>Host</span>
+            <select id="host-filter">
+              <option value="">All hosts</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Tag</span>
+            <select id="tag-filter">
+              <option value="">All tags</option>
+            </select>
+          </label>
+        </form>
+        <p class="meta" id="summary-copy">Loading registry index...</p>
+      </section>
+
+      <section class="panel" aria-labelledby="template-list-title">
+        <div class="section-heading">
+          <h2 id="template-list-title">Templates</h2>
+          <p class="meta">Every released version lives in an immutable directory.</p>
+        </div>
+        <div class="card-grid" id="template-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="./site-config.js"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

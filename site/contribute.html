@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contribute to Spwnr Registry</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="hero hero--compact">
+      <div class="hero__content">
+        <p class="eyebrow">Contribute</p>
+        <h1>Submit new subagent template versions through pull requests.</h1>
+        <p class="hero__lede">
+          The registry accepts versioned template directories only. Existing released versions stay immutable after merge.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="https://github.com/Cheong43/spwnr-registry/compare">Open a PR</a>
+          <a class="button button--secondary" href="./index.html">Back to registry</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="panel prose">
+        <h2>Submission rules</h2>
+        <ol>
+          <li>Create a new directory under `templates/&lt;name&gt;/&lt;version&gt;/`.</li>
+          <li>Include `subagent.yaml`, prompt assets, schemas, skills, and `README.md`.</li>
+          <li>Declare `metadata.authors`, `spec.compatibility.hosts`, and any structured dependencies.</li>
+          <li>Do not modify an existing released version directory. Publish a new version instead.</li>
+          <li>Let the validation workflow pass before requesting review.</li>
+        </ol>
+
+        <h2>Review flow</h2>
+        <p>
+          `CODEOWNERS` requests a maintainer review automatically. Protected branch settings in GitHub should require at least one approval and a passing validation workflow before merge.
+        </p>
+
+        <h2>Custom domain</h2>
+        <p>
+          The first release uses the default `github.io` domain. A later phase can add a `CNAME` file and DNS once the site shape is stable.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spwnr Registry Template</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="hero hero--compact">
+      <div class="hero__content">
+        <p class="eyebrow">Template Details</p>
+        <h1 id="template-title">Loading template...</h1>
+        <p class="hero__lede" id="template-description">Fetching registry metadata.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="./index.html">Back to registry</a>
+          <a id="template-source-link" class="button button--secondary" href="#">Source tree</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="panel detail-grid">
+        <article class="detail-card">
+          <h2>Versions</h2>
+          <ul id="version-list" class="detail-list"></ul>
+        </article>
+        <article class="detail-card">
+          <h2>Authors</h2>
+          <ul id="author-list" class="detail-list"></ul>
+        </article>
+        <article class="detail-card">
+          <h2>Compatibility</h2>
+          <div class="pill-row" id="host-pills"></div>
+        </article>
+        <article class="detail-card">
+          <h2>Dependencies</h2>
+          <ul id="dependency-list" class="detail-list"></ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="./site-config.js"></script>
+    <script src="./template.js" type="module"></script>
+  </body>
+</html>

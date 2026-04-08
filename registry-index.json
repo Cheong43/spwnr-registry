@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-04-08T03:05:01.923Z",
+  "totalTemplates": 1,
+  "templates": [
+    {
+      "name": "code-reviewer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "description": "Review git diff and produce actionable feedback",
+      "authors": [
+        {
+          "name": "Spwnr Team",
+          "github": "Cheong43",
+          "url": "https://github.com/Cheong43"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code",
+        "codex",
+        "copilot",
+        "opencode"
+      ],
+      "dependenciesSummary": [
+        "binary:git",
+        "npm:gh ^2.0.0 (optional)"
+      ],
+      "tags": [
+        "code-review",
+        "git"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/code-reviewer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=code-reviewer"
+    }
+  ]
+}
