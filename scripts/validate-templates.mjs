@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { listTemplateVersionDirs, loadTemplate, repoRootFrom, validateTemplate } from './lib/registry.mjs';
 
