@@ -6,6 +6,7 @@ const templateSourceLink = document.getElementById('template-source-link');
 const versionList = document.getElementById('version-list');
 const authorList = document.getElementById('author-list');
 const hostPills = document.getElementById('host-pills');
+const domainPills = document.getElementById('domain-pills');
 const dependencyList = document.getElementById('dependency-list');
 
 function renderList(element, items) {
@@ -37,6 +38,7 @@ fetch('./registry-index.json')
     renderList(authorList, (entry.authors ?? []).map((author) => author.github ? `${author.name} (@${author.github})` : author.name));
     renderList(dependencyList, entry.dependenciesSummary ?? []);
     hostPills.innerHTML = (entry.compatibilityHosts ?? []).map((host) => `<span class="pill">${host}</span>`).join('');
+    domainPills.innerHTML = (entry.domains ?? []).map((domain) => `<span class="pill">${domain}</span>`).join('');
   })
   .catch((error) => {
     templateTitle.textContent = 'Template unavailable';

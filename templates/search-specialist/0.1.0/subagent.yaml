@@ -1,0 +1,62 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: search-specialist
+  version: 0.1.0
+  instruction: Use when you need to find specific information across multiple
+    sources using advanced search strategies, query optimization, and targeted
+    information retrieval. Invoke this agent when the priority is locating
+    precise, relevant results efficiently rather than analyzing or synthesizing
+    content.
+  description: Use when you need to find specific information across multiple
+    sources using advanced search strategies, query optimization, and targeted
+    information retrieval. Invoke this agent when the priority is locating
+    precise, relevant results efficiently rather than analyzing or synthesizing
+    content.
+  domains:
+    - Research & Analysis
+  tags:
+    - voltagent
+    - research-analysis
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/10-research-analysis/search-specialist.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: sonnet
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Grep
+      - Glob
+      - WebFetch
+      - WebSearch
+

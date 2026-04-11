@@ -115,6 +115,7 @@ export function buildRegistryIndex(repoRoot) {
       versions: [],
       instruction: manifest.metadata.instruction ?? '',
       description: manifest.metadata.description ?? '',
+      domains: manifest.metadata.domains ?? [],
       authors: manifest.metadata.authors ?? [],
       compatibilityHosts: manifest.spec?.compatibility?.hosts ?? [],
       dependenciesSummary: summarizeDependencies(manifest.spec?.dependencies?.packages ?? []),
@@ -124,6 +125,7 @@ export function buildRegistryIndex(repoRoot) {
     existing.versions.push(manifest.metadata.version);
     existing.instruction = manifest.metadata.instruction ?? existing.instruction;
     existing.description = manifest.metadata.description ?? existing.description;
+    existing.domains = manifest.metadata.domains ?? existing.domains;
     existing.authors = manifest.metadata.authors ?? existing.authors;
     existing.compatibilityHosts = manifest.spec?.compatibility?.hosts ?? existing.compatibilityHosts;
     existing.dependenciesSummary = summarizeDependencies(manifest.spec?.dependencies?.packages ?? []);
@@ -140,6 +142,7 @@ export function buildRegistryIndex(repoRoot) {
         versions,
         instruction: entry.instruction,
         description: entry.description,
+        domains: entry.domains,
         authors: entry.authors,
         compatibilityHosts: entry.compatibilityHosts,
         dependenciesSummary: entry.dependenciesSummary,

@@ -1,0 +1,58 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: seo-specialist
+  version: 0.1.0
+  instruction: Use this agent when you need comprehensive SEO optimization
+    encompassing technical audits, keyword strategy, content optimization, and
+    search rankings improvement.
+  description: Use this agent when you need comprehensive SEO optimization
+    encompassing technical audits, keyword strategy, content optimization, and
+    search rankings improvement.
+  domains:
+    - Specialized Domains
+  tags:
+    - voltagent
+    - specialized-domains
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/07-specialized-domains/seo-specialist.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: haiku
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Grep
+      - Glob
+      - WebFetch
+      - WebSearch
+

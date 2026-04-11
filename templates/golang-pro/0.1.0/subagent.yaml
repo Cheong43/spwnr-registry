@@ -1,0 +1,59 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: golang-pro
+  version: 0.1.0
+  instruction: Use when building Go applications requiring concurrent programming,
+    high-performance systems, microservices, or cloud-native architectures where
+    idiomatic patterns, error handling excellence, and efficiency are critical.
+  description: Use when building Go applications requiring concurrent programming,
+    high-performance systems, microservices, or cloud-native architectures where
+    idiomatic patterns, error handling excellence, and efficiency are critical.
+  domains:
+    - Language Specialists
+  tags:
+    - voltagent
+    - language-specialists
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/02-language-specialists/golang-pro.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: sonnet
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep
+

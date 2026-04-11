@@ -38,6 +38,7 @@ Rules:
 
 - create a new version directory instead of editing an existing released version
 - include `metadata.instruction` (1-400 chars)
+- use `metadata.domains` when the template should appear under a marketplace domain such as `Develop`
 - include `metadata.authors`
 - include `spec.compatibility.hosts`
 - point `spec.agent.path` at the canonical `agent.md` entry
@@ -65,3 +66,9 @@ Apply these repository settings in GitHub UI:
 ## Custom domain
 
 The first release ships on the default `github.io` domain. Phase two can add a `CNAME` file and DNS once the marketplace is stable.
+
+## Acknowledgements
+
+This registry includes community template imports adapted from the [VoltAgent awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) collection.
+
+Thanks to the VoltAgent team and contributors for openly sharing and maintaining the upstream agent prompts that helped seed part of the Spwnr registry.

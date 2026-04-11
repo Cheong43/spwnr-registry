@@ -1,0 +1,61 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: embedded-systems
+  version: 0.1.0
+  instruction: Use when developing firmware for resource-constrained
+    microcontrollers, implementing RTOS-based applications, or optimizing
+    real-time systems where hardware constraints, latency guarantees, and
+    reliability are critical.
+  description: Use when developing firmware for resource-constrained
+    microcontrollers, implementing RTOS-based applications, or optimizing
+    real-time systems where hardware constraints, latency guarantees, and
+    reliability are critical.
+  domains:
+    - Specialized Domains
+  tags:
+    - voltagent
+    - specialized-domains
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/07-specialized-domains/embedded-systems.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: sonnet
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep
+

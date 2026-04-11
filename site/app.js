@@ -2,11 +2,12 @@ const templateGrid = document.getElementById('template-grid');
 const summaryCopy = document.getElementById('summary-copy');
 const searchInput = document.getElementById('search-input');
 const hostFilter = document.getElementById('host-filter');
+const domainFilter = document.getElementById('domain-filter');
 const tagFilter = document.getElementById('tag-filter');
 
 const state = {
   registry: { templates: [] },
-  filters: { search: '', host: '', tag: '' },
+  filters: { search: '', host: '', domain: '', tag: '' },
 };
 
 function unique(values) {
@@ -29,6 +30,7 @@ function matches(template) {
     template.name,
     template.instruction,
     template.description,
+    ...(template.domains ?? []),
     ...(template.tags ?? []),
     ...(template.compatibilityHosts ?? []),
     ...((template.authors ?? []).map((author) => author.name)),
@@ -41,6 +43,9 @@ function matches(template) {
     return false;
   }
   if (state.filters.host && !(template.compatibilityHosts ?? []).includes(state.filters.host)) {
+    return false;
+  }
+  if (state.filters.domain && !(template.domains ?? []).includes(state.filters.domain)) {
     return false;
   }
   if (state.filters.tag && !(template.tags ?? []).includes(state.filters.tag)) {
@@ -68,6 +73,9 @@ function render() {
     const hosts = (template.compatibilityHosts ?? [])
       .map((host) => `<span class="pill">${host}</span>`)
       .join('');
+    const domains = (template.domains ?? [])
+      .map((domain) => `<span class="pill">${domain}</span>`)
+      .join('');
     const tags = (template.tags ?? [])
       .map((tag) => `<span class="pill">${tag}</span>`)
       .join('');
@@ -79,7 +87,7 @@ function render() {
       <p class="eyebrow">Latest ${template.latestVersion}</p>
       <h3>${template.name}</h3>
       <p>${template.instruction ?? template.description ?? 'No description provided.'}</p>
-      <div class="pill-row">${hosts}${tags}</div>
+      <div class="pill-row">${domains}${hosts}${tags}</div>
       <p class="meta">Versions: ${(template.versions ?? []).join(', ')}</p>
       ${dependencies ? `<ul class="detail-list">${dependencies}</ul>` : ''}
       <div class="hero__actions">
@@ -101,6 +109,11 @@ hostFilter.addEventListener('change', (event) => {
   render();
 });
 
+domainFilter.addEventListener('change', (event) => {
+  state.filters.domain = event.target.value;
+  render();
+});
+
 tagFilter.addEventListener('change', (event) => {
   state.filters.tag = event.target.value;
   render();
@@ -111,6 +124,7 @@ fetch('./registry-index.json')
   .then((registry) => {
     state.registry = registry;
     renderOptions(hostFilter, unique((registry.templates ?? []).flatMap((template) => template.compatibilityHosts ?? [])), 'hosts');
+    renderOptions(domainFilter, unique((registry.templates ?? []).flatMap((template) => template.domains ?? [])), 'domains');
     renderOptions(tagFilter, unique((registry.templates ?? []).flatMap((template) => template.tags ?? [])), 'tags');
     render();
   })

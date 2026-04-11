@@ -1,0 +1,60 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: business-analyst
+  version: 0.1.0
+  instruction: Use when analyzing business processes, gathering requirements from
+    stakeholders, or identifying process improvement opportunities to drive
+    operational efficiency and measurable business value.
+  description: Use when analyzing business processes, gathering requirements from
+    stakeholders, or identifying process improvement opportunities to drive
+    operational efficiency and measurable business value.
+  domains:
+    - Business & Product
+  tags:
+    - voltagent
+    - business-product
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/08-business-product/business-analyst.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: sonnet
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Glob
+      - Grep
+      - WebFetch
+      - WebSearch
+

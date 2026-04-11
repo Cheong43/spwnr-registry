@@ -1,0 +1,65 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: security-engineer
+  version: 0.1.0
+  instruction: Use this agent when implementing comprehensive security solutions
+    across infrastructure, building automated security controls into CI/CD
+    pipelines, or establishing compliance and vulnerability management programs.
+    Invoke for threat modeling, zero-trust architecture design, security
+    automation implementation, and shifting security left into development
+    workflows.
+  description: Use this agent when implementing comprehensive security solutions
+    across infrastructure, building automated security controls into CI/CD
+    pipelines, or establishing compliance and vulnerability management programs.
+    Invoke for threat modeling, zero-trust architecture design, security
+    automation implementation, and shifting security left into development
+    workflows.
+  domains:
+    - Infrastructure
+  tags:
+    - voltagent
+    - infrastructure
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/03-infrastructure/security-engineer.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: opus
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep
+

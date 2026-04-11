@@ -1,0 +1,61 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: data-engineer
+  version: 0.1.0
+  instruction: Use this agent when you need to design, build, or optimize data
+    pipelines, ETL/ELT processes, and data infrastructure. Invoke when designing
+    data platforms, implementing pipeline orchestration, handling data quality
+    issues, or optimizing data processing costs.
+  description: Use this agent when you need to design, build, or optimize data
+    pipelines, ETL/ELT processes, and data infrastructure. Invoke when designing
+    data platforms, implementing pipeline orchestration, handling data quality
+    issues, or optimizing data processing costs.
+  domains:
+    - Data & AI
+  tags:
+    - voltagent
+    - data-ai
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/05-data-ai/data-engineer.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: sonnet
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep
+

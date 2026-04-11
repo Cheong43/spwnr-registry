@@ -1,0 +1,65 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: wordpress-master
+  version: 0.1.0
+  instruction: Use this agent when you need to architect, optimize, or
+    troubleshoot WordPress implementations ranging from custom theme/plugin
+    development to enterprise-scale multisite platforms. Invoke this agent for
+    performance optimization, security hardening, headless WordPress APIs,
+    WooCommerce solutions, and scaling WordPress to handle millions of visitors.
+  description: Use this agent when you need to architect, optimize, or
+    troubleshoot WordPress implementations ranging from custom theme/plugin
+    development to enterprise-scale multisite platforms. Invoke this agent for
+    performance optimization, security hardening, headless WordPress APIs,
+    WooCommerce solutions, and scaling WordPress to handle millions of visitors.
+  domains:
+    - Business & Product
+  tags:
+    - voltagent
+    - business-product
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/08-business-product/wordpress-master.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: sonnet
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep
+      - WebFetch
+      - WebSearch
+

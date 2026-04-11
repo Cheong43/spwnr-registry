@@ -1,0 +1,64 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: content-marketer
+  version: 0.1.0
+  instruction: Use this agent when you need to develop comprehensive content
+    strategies, create SEO-optimized marketing content, or execute multi-channel
+    content campaigns to drive engagement and conversions. Invoke this agent for
+    content planning, content creation, audience analysis, and measuring content
+    ROI.
+  description: Use this agent when you need to develop comprehensive content
+    strategies, create SEO-optimized marketing content, or execute multi-channel
+    content campaigns to drive engagement and conversions. Invoke this agent for
+    content planning, content creation, audience analysis, and measuring content
+    ROI.
+  domains:
+    - Business & Product
+  tags:
+    - voltagent
+    - business-product
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/08-business-product/content-marketer.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: haiku
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Glob
+      - Grep
+      - WebFetch
+      - WebSearch
+

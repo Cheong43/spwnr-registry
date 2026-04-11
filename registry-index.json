@@ -1,15 +1,539 @@
 {
-  "generatedAt": "2026-04-08T09:48:13.904Z",
-  "totalTemplates": 1,
+  "generatedAt": "2026-04-11T02:16:14.064Z",
+  "totalTemplates": 141,
   "templates": [
     {
-      "name": "code-reviewer",
+      "name": "accessibility-tester",
       "latestVersion": "0.1.0",
       "versions": [
         "0.1.0"
       ],
-      "instruction": "Review git diffs and return precise, actionable feedback.",
+      "instruction": "Use this agent when you need comprehensive accessibility testing, WCAG compliance verification, or assessment of assistive technology support.",
+      "description": "Use this agent when you need comprehensive accessibility testing, WCAG compliance verification, or assessment of assistive technology support.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/accessibility-tester/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=accessibility-tester"
+    },
+    {
+      "name": "ad-security-reviewer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to audit Active Directory security posture, evaluate privilege escalation risks, review identity delegation patterns, or assess authentication protocol hardening.",
+      "description": "Use this agent when you need to audit Active Directory security posture, evaluate privilege escalation risks, review identity delegation patterns, or assess authentication protocol hardening.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/ad-security-reviewer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=ad-security-reviewer"
+    },
+    {
+      "name": "agent-installer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when the user wants to discover, browse, or install Claude Code agents from the awesome-claude-code-subagents repository.",
+      "description": "Use this agent when the user wants to discover, browse, or install Claude Code agents from the awesome-claude-code-subagents repository.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/agent-installer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=agent-installer"
+    },
+    {
+      "name": "agent-organizer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when assembling and optimizing multi-agent teams to execute complex projects that require careful task decomposition, agent capability matching, and workflow coordination.",
+      "description": "Use when assembling and optimizing multi-agent teams to execute complex projects that require careful task decomposition, agent capability matching, and workflow coordination.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/agent-organizer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=agent-organizer"
+    },
+    {
+      "name": "ai-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when architecting, implementing, or optimizing end-to-end AI systems—from model selection and training pipelines to production deployment and monitoring.",
+      "description": "Use this agent when architecting, implementing, or optimizing end-to-end AI systems—from model selection and training pipelines to production deployment and monitoring.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/ai-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=ai-engineer"
+    },
+    {
+      "name": "ai-writing-auditor",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to audit content for AI writing patterns and rewrite text to remove them.",
+      "description": "Use this agent when you need to audit content for AI writing patterns and rewrite text to remove them.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/ai-writing-auditor/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=ai-writing-auditor"
+    },
+    {
+      "name": "angular-architect",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when architecting enterprise Angular 15+ applications with complex state management, optimizing RxJS patterns, designing micro-frontend systems, or solving performance and scalability challenges in large codebases.",
+      "description": "Use when architecting enterprise Angular 15+ applications with complex state management, optimizing RxJS patterns, designing micro-frontend systems, or solving performance and scalability challenges in large codebases.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/angular-architect/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=angular-architect"
+    },
+    {
+      "name": "api-designer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when designing new APIs, creating API specifications, or refactoring existing API architecture for scalability and developer experience. Invoke when you need REST/GraphQL endpoint design, OpenAPI documentation, authentication patterns, or API versioning strategies.",
+      "description": "Use this agent when designing new APIs, creating API specifications, or refactoring existing API architecture for scalability and developer experience. Invoke when you need REST/GraphQL endpoint design, OpenAPI documentation, authentication patterns, or API versioning strategies.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/api-designer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=api-designer"
+    },
+    {
+      "name": "api-documenter",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when creating or improving API documentation, writing OpenAPI specifications, building interactive documentation portals, or generating code examples for APIs.",
+      "description": "Use this agent when creating or improving API documentation, writing OpenAPI specifications, building interactive documentation portals, or generating code examples for APIs.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/api-documenter/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=api-documenter"
+    },
+    {
+      "name": "architect-reviewer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to evaluate system design decisions, architectural patterns, and technology choices at the macro level.",
+      "description": "Use this agent when you need to evaluate system design decisions, architectural patterns, and technology choices at the macro level.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/architect-reviewer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=architect-reviewer"
+    },
+    {
+      "name": "azure-infra-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when designing, deploying, or managing Azure infrastructure with focus on network architecture, Entra ID integration, PowerShell automation, and Bicep IaC.",
+      "description": "Use when designing, deploying, or managing Azure infrastructure with focus on network architecture, Entra ID integration, PowerShell automation, and Bicep IaC.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/azure-infra-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=azure-infra-engineer"
+    },
+    {
+      "name": "backend-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building server-side APIs, microservices, and backend systems that require robust architecture, scalability planning, and production-ready implementation.",
+      "description": "Use this agent when building server-side APIs, microservices, and backend systems that require robust architecture, scalability planning, and production-ready implementation.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/backend-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=backend-developer"
+    },
+    {
+      "name": "blockchain-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building smart contracts, DApps, and blockchain protocols that require expertise in Solidity, gas optimization, security auditing, and Web3 integration.",
+      "description": "Use this agent when building smart contracts, DApps, and blockchain protocols that require expertise in Solidity, gas optimization, security auditing, and Web3 integration.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/blockchain-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=blockchain-developer"
+    },
+    {
+      "name": "build-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to optimize build performance, reduce compilation times, or scale build systems across growing teams.",
+      "description": "Use this agent when you need to optimize build performance, reduce compilation times, or scale build systems across growing teams.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/build-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=build-engineer"
+    },
+    {
+      "name": "business-analyst",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when analyzing business processes, gathering requirements from stakeholders, or identifying process improvement opportunities to drive operational efficiency and measurable business value.",
+      "description": "Use when analyzing business processes, gathering requirements from stakeholders, or identifying process improvement opportunities to drive operational efficiency and measurable business value.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/business-analyst/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=business-analyst"
+    },
+    {
+      "name": "chaos-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design and execute controlled failure experiments, validate system resilience before incidents occur, or conduct game day exercises to test your team's incident response capabilities.",
+      "description": "Use this agent when you need to design and execute controlled failure experiments, validate system resilience before incidents occur, or conduct game day exercises to test your team's incident response capabilities.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/chaos-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=chaos-engineer"
+    },
+    {
+      "name": "cli-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building command-line tools and terminal applications that require intuitive command design, cross-platform compatibility, and optimized developer experience.",
+      "description": "Use this agent when building command-line tools and terminal applications that require intuitive command design, cross-platform compatibility, and optimized developer experience.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/cli-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=cli-developer"
+    },
+    {
+      "name": "cloud-architect",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design, evaluate, or optimize cloud infrastructure architecture at scale. Invoke when designing multi-cloud strategies, planning cloud migrations, implementing disaster recovery, optimizing cloud costs, or ensuring security/compliance across cloud platforms.",
+      "description": "Use this agent when you need to design, evaluate, or optimize cloud infrastructure architecture at scale. Invoke when designing multi-cloud strategies, planning cloud migrations, implementing disaster recovery, optimizing cloud costs, or ensuring security/compliance across cloud platforms.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/cloud-architect/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=cloud-architect"
+    },
+    {
+      "name": "code-reviewer",
+      "latestVersion": "0.2.0",
+      "versions": [
+        "0.2.0",
+        "0.1.0"
+      ],
+      "instruction": "Review git diffs and surface concrete, actionable issues.",
       "description": "Review git diff and produce actionable feedback",
+      "domains": [],
       "authors": [
         {
           "name": "Spwnr Team",
@@ -31,8 +555,3546 @@
         "code-review",
         "git"
       ],
-      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/code-reviewer/0.1.0",
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/code-reviewer/0.2.0",
       "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=code-reviewer"
+    },
+    {
+      "name": "competitive-analyst",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when you need to analyze direct and indirect competitors, benchmark against market leaders, or develop strategies to strengthen competitive positioning and market advantage.",
+      "description": "Use when you need to analyze direct and indirect competitors, benchmark against market leaders, or develop strategies to strengthen competitive positioning and market advantage.",
+      "domains": [
+        "Research & Analysis"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "research-analysis"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/competitive-analyst/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=competitive-analyst"
+    },
+    {
+      "name": "compliance-auditor",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to achieve regulatory compliance, implement compliance controls, or prepare for audits across frameworks like GDPR, HIPAA, PCI DSS, SOC 2, and ISO standards.",
+      "description": "Use this agent when you need to achieve regulatory compliance, implement compliance controls, or prepare for audits across frameworks like GDPR, HIPAA, PCI DSS, SOC 2, and ISO standards.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/compliance-auditor/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=compliance-auditor"
+    },
+    {
+      "name": "content-marketer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to develop comprehensive content strategies, create SEO-optimized marketing content, or execute multi-channel content campaigns to drive engagement and conversions. Invoke this agent for content planning, content creation, audience analysis, and measuring content ROI.",
+      "description": "Use this agent when you need to develop comprehensive content strategies, create SEO-optimized marketing content, or execute multi-channel content campaigns to drive engagement and conversions. Invoke this agent for content planning, content creation, audience analysis, and measuring content ROI.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/content-marketer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=content-marketer"
+    },
+    {
+      "name": "context-manager",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use for managing shared state, information retrieval, and data synchronization when multiple agents need coordinated access to context and metadata.",
+      "description": "Use for managing shared state, information retrieval, and data synchronization when multiple agents need coordinated access to context and metadata.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/context-manager/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=context-manager"
+    },
+    {
+      "name": "cpp-pro",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building high-performance C++ systems requiring modern C++20/23 features, template metaprogramming, or zero-overhead abstractions for systems programming, embedded systems, or performance-critical applications.",
+      "description": "Use this agent when building high-performance C++ systems requiring modern C++20/23 features, template metaprogramming, or zero-overhead abstractions for systems programming, embedded systems, or performance-critical applications.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/cpp-pro/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=cpp-pro"
+    },
+    {
+      "name": "csharp-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building ASP.NET Core web APIs, cloud-native .NET solutions, or modern C# applications requiring async patterns, dependency injection, Entity Framework optimization, and clean architecture.",
+      "description": "Use this agent when building ASP.NET Core web APIs, cloud-native .NET solutions, or modern C# applications requiring async patterns, dependency injection, Entity Framework optimization, and clean architecture.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/csharp-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=csharp-developer"
+    },
+    {
+      "name": "customer-success-manager",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to assess customer health, develop retention strategies, identify upsell opportunities, or maximize customer lifetime value. Invoke this agent for account health analysis, churn prevention, product adoption optimization, and customer success planning.",
+      "description": "Use this agent when you need to assess customer health, develop retention strategies, identify upsell opportunities, or maximize customer lifetime value. Invoke this agent for account health analysis, churn prevention, product adoption optimization, and customer success planning.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/customer-success-manager/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=customer-success-manager"
+    },
+    {
+      "name": "data-analyst",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when you need to extract insights from business data, create dashboards and reports, or perform statistical analysis to support decision-making.",
+      "description": "Use when you need to extract insights from business data, create dashboards and reports, or perform statistical analysis to support decision-making.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/data-analyst/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=data-analyst"
+    },
+    {
+      "name": "data-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design, build, or optimize data pipelines, ETL/ELT processes, and data infrastructure. Invoke when designing data platforms, implementing pipeline orchestration, handling data quality issues, or optimizing data processing costs.",
+      "description": "Use this agent when you need to design, build, or optimize data pipelines, ETL/ELT processes, and data infrastructure. Invoke when designing data platforms, implementing pipeline orchestration, handling data quality issues, or optimizing data processing costs.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/data-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=data-engineer"
+    },
+    {
+      "name": "data-researcher",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to discover, collect, and validate data from multiple sources to fuel analysis and decision-making. Invoke this agent for identifying data sources, gathering raw datasets, performing quality checks, and preparing data for downstream analysis or modeling.",
+      "description": "Use this agent when you need to discover, collect, and validate data from multiple sources to fuel analysis and decision-making. Invoke this agent for identifying data sources, gathering raw datasets, performing quality checks, and preparing data for downstream analysis or modeling.",
+      "domains": [
+        "Research & Analysis"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "research-analysis"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/data-researcher/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=data-researcher"
+    },
+    {
+      "name": "data-scientist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to analyze data patterns, build predictive models, or extract statistical insights from datasets. Invoke this agent for exploratory analysis, hypothesis testing, machine learning model development, and translating findings into business recommendations.",
+      "description": "Use this agent when you need to analyze data patterns, build predictive models, or extract statistical insights from datasets. Invoke this agent for exploratory analysis, hypothesis testing, machine learning model development, and translating findings into business recommendations.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/data-scientist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=data-scientist"
+    },
+    {
+      "name": "database-administrator",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when optimizing database performance, implementing high-availability architectures, setting up disaster recovery, or managing database infrastructure for production systems.",
+      "description": "Use this agent when optimizing database performance, implementing high-availability architectures, setting up disaster recovery, or managing database infrastructure for production systems.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/database-administrator/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=database-administrator"
+    },
+    {
+      "name": "database-optimizer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to analyze slow queries, optimize database performance across multiple systems, or implement indexing strategies to improve query execution.",
+      "description": "Use this agent when you need to analyze slow queries, optimize database performance across multiple systems, or implement indexing strategies to improve query execution.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/database-optimizer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=database-optimizer"
+    },
+    {
+      "name": "debugger",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to diagnose and fix bugs, identify root causes of failures, or analyze error logs and stack traces to resolve issues.",
+      "description": "Use this agent when you need to diagnose and fix bugs, identify root causes of failures, or analyze error logs and stack traces to resolve issues.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/debugger/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=debugger"
+    },
+    {
+      "name": "dependency-manager",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to audit dependencies for vulnerabilities, resolve version conflicts, optimize bundle sizes, or implement automated dependency updates.",
+      "description": "Use this agent when you need to audit dependencies for vulnerabilities, resolve version conflicts, optimize bundle sizes, or implement automated dependency updates.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/dependency-manager/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=dependency-manager"
+    },
+    {
+      "name": "deployment-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when designing, building, or optimizing CI/CD pipelines and deployment automation strategies.",
+      "description": "Use this agent when designing, building, or optimizing CI/CD pipelines and deployment automation strategies.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/deployment-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=deployment-engineer"
+    },
+    {
+      "name": "design-bridge",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to translate a DESIGN.md from the VoltAgent/awesome-design-md repository into polished Claude Code instructions for building user interfaces that faithfully match the chosen brand. Invoke this agent whenever a developer or designer asks to replicate the look and feel of an existing product or website.",
+      "description": "Use this agent when you need to translate a DESIGN.md from the VoltAgent/awesome-design-md repository into polished Claude Code instructions for building user interfaces that faithfully match the chosen brand. Invoke this agent whenever a developer or designer asks to replicate the look and feel of an existing product or website.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/design-bridge/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=design-bridge"
+    },
+    {
+      "name": "devops-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building or optimizing infrastructure automation, CI/CD pipelines, containerization strategies, and deployment workflows to accelerate software delivery while maintaining reliability and security.",
+      "description": "Use this agent when building or optimizing infrastructure automation, CI/CD pipelines, containerization strategies, and deployment workflows to accelerate software delivery while maintaining reliability and security.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/devops-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=devops-engineer"
+    },
+    {
+      "name": "devops-incident-responder",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when actively responding to production incidents, diagnosing critical service failures, or conducting incident postmortems to implement permanent fixes and preventative measures.",
+      "description": "Use when actively responding to production incidents, diagnosing critical service failures, or conducting incident postmortems to implement permanent fixes and preventative measures.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/devops-incident-responder/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=devops-incident-responder"
+    },
+    {
+      "name": "django-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building Django 4+ web applications, REST APIs, or modernizing existing Django projects with async views and enterprise patterns.",
+      "description": "Use when building Django 4+ web applications, REST APIs, or modernizing existing Django projects with async views and enterprise patterns.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/django-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=django-developer"
+    },
+    {
+      "name": "docker-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to build, optimize, or secure Docker container images and orchestration for production environments.",
+      "description": "Use this agent when you need to build, optimize, or secure Docker container images and orchestration for production environments.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/docker-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=docker-expert"
+    },
+    {
+      "name": "documentation-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to create, architect, or overhaul comprehensive documentation systems including API docs, tutorials, guides, and developer-friendly content that keeps pace with code changes.",
+      "description": "Use this agent when you need to create, architect, or overhaul comprehensive documentation systems including API docs, tutorials, guides, and developer-friendly content that keeps pace with code changes.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/documentation-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=documentation-engineer"
+    },
+    {
+      "name": "dotnet-core-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building .NET Core applications requiring cloud-native architecture, high-performance microservices, modern C# patterns, or cross-platform deployment with minimal APIs and advanced ASP.NET Core features.",
+      "description": "Use when building .NET Core applications requiring cloud-native architecture, high-performance microservices, modern C# patterns, or cross-platform deployment with minimal APIs and advanced ASP.NET Core features.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/dotnet-core-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=dotnet-core-expert"
+    },
+    {
+      "name": "dotnet-framework-4.8-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when working on legacy .NET Framework 4.8 enterprise applications that require maintenance, modernization, or integration with Windows-based infrastructure.",
+      "description": "Use this agent when working on legacy .NET Framework 4.8 enterprise applications that require maintenance, modernization, or integration with Windows-based infrastructure.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/dotnet-framework-4.8-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=dotnet-framework-4.8-expert"
+    },
+    {
+      "name": "dx-optimizer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when optimizing the complete developer workflow including build times, feedback loops, testing efficiency, and developer satisfaction metrics across the entire development environment.",
+      "description": "Use this agent when optimizing the complete developer workflow including build times, feedback loops, testing efficiency, and developer satisfaction metrics across the entire development environment.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/dx-optimizer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=dx-optimizer"
+    },
+    {
+      "name": "electron-pro",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building Electron desktop applications that require native OS integration, cross-platform distribution, security hardening, and performance optimization. Use electron-pro for complete desktop app development from architecture to signed, distributable installers.",
+      "description": "Use this agent when building Electron desktop applications that require native OS integration, cross-platform distribution, security hardening, and performance optimization. Use electron-pro for complete desktop app development from architecture to signed, distributable installers.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/electron-pro/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=electron-pro"
+    },
+    {
+      "name": "elixir-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to build fault-tolerant, concurrent systems leveraging OTP patterns, GenServer architectures, and Phoenix framework for real-time applications.",
+      "description": "Use this agent when you need to build fault-tolerant, concurrent systems leveraging OTP patterns, GenServer architectures, and Phoenix framework for real-time applications.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/elixir-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=elixir-expert"
+    },
+    {
+      "name": "embedded-systems",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when developing firmware for resource-constrained microcontrollers, implementing RTOS-based applications, or optimizing real-time systems where hardware constraints, latency guarantees, and reliability are critical.",
+      "description": "Use when developing firmware for resource-constrained microcontrollers, implementing RTOS-based applications, or optimizing real-time systems where hardware constraints, latency guarantees, and reliability are critical.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/embedded-systems/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=embedded-systems"
+    },
+    {
+      "name": "error-coordinator",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when distributed system errors occur and need coordinated handling across multiple components, or when you need to implement comprehensive error recovery strategies with automated failure detection and cascade prevention.",
+      "description": "Use this agent when distributed system errors occur and need coordinated handling across multiple components, or when you need to implement comprehensive error recovery strategies with automated failure detection and cascade prevention.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/error-coordinator/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=error-coordinator"
+    },
+    {
+      "name": "error-detective",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to diagnose why errors are occurring in your system, correlate errors across services, identify root causes, and prevent future failures.",
+      "description": "Use this agent when you need to diagnose why errors are occurring in your system, correlate errors across services, identify root causes, and prevent future failures.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/error-detective/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=error-detective"
+    },
+    {
+      "name": "expo-react-native-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building mobile applications with Expo and React Native that require native module integration, navigation setup, performant animations, push notifications, OTA updates, or App Store/Play Store deployment.",
+      "description": "Use when building mobile applications with Expo and React Native that require native module integration, navigation setup, performant animations, push notifications, OTA updates, or App Store/Play Store deployment.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/expo-react-native-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=expo-react-native-expert"
+    },
+    {
+      "name": "fastapi-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building modern async Python APIs with FastAPI, implementing Pydantic v2 validation, dependency injection patterns, or deploying high-performance ASGI applications.",
+      "description": "Use when building modern async Python APIs with FastAPI, implementing Pydantic v2 validation, dependency injection patterns, or deploying high-performance ASGI applications.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/fastapi-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=fastapi-developer"
+    },
+    {
+      "name": "fintech-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building payment systems, financial integrations, or compliance-heavy financial applications that require secure transaction processing, regulatory adherence, and high transaction accuracy.",
+      "description": "Use when building payment systems, financial integrations, or compliance-heavy financial applications that require secure transaction processing, regulatory adherence, and high transaction accuracy.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/fintech-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=fintech-engineer"
+    },
+    {
+      "name": "flutter-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building cross-platform mobile applications with Flutter 3+ that require custom UI implementation, complex state management, native platform integrations, or performance optimization across iOS/Android/Web.",
+      "description": "Use when building cross-platform mobile applications with Flutter 3+ that require custom UI implementation, complex state management, native platform integrations, or performance optimization across iOS/Android/Web.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/flutter-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=flutter-expert"
+    },
+    {
+      "name": "frontend-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building complete frontend applications across React, Vue, and Angular frameworks requiring multi-framework expertise and full-stack integration.",
+      "description": "Use when building complete frontend applications across React, Vue, and Angular frameworks requiring multi-framework expertise and full-stack integration.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/frontend-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=frontend-developer"
+    },
+    {
+      "name": "fullstack-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to build complete features spanning database, API, and frontend layers together as a cohesive unit.",
+      "description": "Use this agent when you need to build complete features spanning database, API, and frontend layers together as a cohesive unit.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/fullstack-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=fullstack-developer"
+    },
+    {
+      "name": "game-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when implementing game systems, optimizing graphics rendering, building multiplayer networking, or developing gameplay mechanics for games targeting specific platforms.",
+      "description": "Use this agent when implementing game systems, optimizing graphics rendering, building multiplayer networking, or developing gameplay mechanics for games targeting specific platforms.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/game-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=game-developer"
+    },
+    {
+      "name": "git-workflow-manager",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design, establish, or optimize Git workflows, branching strategies, and merge management for a project or team.",
+      "description": "Use this agent when you need to design, establish, or optimize Git workflows, branching strategies, and merge management for a project or team.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/git-workflow-manager/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=git-workflow-manager"
+    },
+    {
+      "name": "golang-pro",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building Go applications requiring concurrent programming, high-performance systems, microservices, or cloud-native architectures where idiomatic patterns, error handling excellence, and efficiency are critical.",
+      "description": "Use when building Go applications requiring concurrent programming, high-performance systems, microservices, or cloud-native architectures where idiomatic patterns, error handling excellence, and efficiency are critical.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/golang-pro/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=golang-pro"
+    },
+    {
+      "name": "graphql-architect",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when designing or evolving GraphQL schemas across microservices, implementing federation architectures, or optimizing query performance in distributed graphs.",
+      "description": "Use this agent when designing or evolving GraphQL schemas across microservices, implementing federation architectures, or optimizing query performance in distributed graphs.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/graphql-architect/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=graphql-architect"
+    },
+    {
+      "name": "incident-responder",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when an active security breach, service outage, or operational incident requires immediate response, evidence preservation, and coordinated recovery.",
+      "description": "Use this agent when an active security breach, service outage, or operational incident requires immediate response, evidence preservation, and coordinated recovery.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/incident-responder/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=incident-responder"
+    },
+    {
+      "name": "iot-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when designing and deploying IoT solutions requiring expertise in device management, edge computing, cloud integration, and handling challenges like massive device scale, complex connectivity scenarios, or real-time data pipelines.",
+      "description": "Use when designing and deploying IoT solutions requiring expertise in device management, edge computing, cloud integration, and handling challenges like massive device scale, complex connectivity scenarios, or real-time data pipelines.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/iot-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=iot-engineer"
+    },
+    {
+      "name": "it-ops-orchestrator",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use for orchestrating complex IT operations tasks that span multiple domains (PowerShell automation, .NET development, infrastructure management, Azure, M365) by intelligently routing work to specialized agents.",
+      "description": "Use for orchestrating complex IT operations tasks that span multiple domains (PowerShell automation, .NET development, infrastructure management, Azure, M365) by intelligently routing work to specialized agents.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/it-ops-orchestrator/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=it-ops-orchestrator"
+    },
+    {
+      "name": "java-architect",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when designing enterprise Java architectures, migrating Spring Boot applications, or establishing microservices patterns for scalable cloud-native systems.",
+      "description": "Use this agent when designing enterprise Java architectures, migrating Spring Boot applications, or establishing microservices patterns for scalable cloud-native systems.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/java-architect/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=java-architect"
+    },
+    {
+      "name": "javascript-pro",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to build, optimize, or refactor modern JavaScript code for browser, Node.js, or full-stack applications requiring ES2023+ features, async patterns, or performance-critical implementations.",
+      "description": "Use this agent when you need to build, optimize, or refactor modern JavaScript code for browser, Node.js, or full-stack applications requiring ES2023+ features, async patterns, or performance-critical implementations.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/javascript-pro/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=javascript-pro"
+    },
+    {
+      "name": "knowledge-synthesizer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when you need to extract actionable patterns from agent interactions, synthesize insights across multiple workflows, and enable organizational learning from collective experience.",
+      "description": "Use when you need to extract actionable patterns from agent interactions, synthesize insights across multiple workflows, and enable organizational learning from collective experience.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/knowledge-synthesizer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=knowledge-synthesizer"
+    },
+    {
+      "name": "kotlin-specialist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building Kotlin applications requiring advanced coroutine patterns, multiplatform code sharing, or Android/server-side development with functional programming principles.",
+      "description": "Use when building Kotlin applications requiring advanced coroutine patterns, multiplatform code sharing, or Android/server-side development with functional programming principles.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/kotlin-specialist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=kotlin-specialist"
+    },
+    {
+      "name": "kubernetes-specialist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design, deploy, configure, or troubleshoot Kubernetes clusters and workloads in production environments.",
+      "description": "Use this agent when you need to design, deploy, configure, or troubleshoot Kubernetes clusters and workloads in production environments.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/kubernetes-specialist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=kubernetes-specialist"
+    },
+    {
+      "name": "laravel-specialist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building Laravel 10+ applications, architecting Eloquent models with complex relationships, implementing queue systems for async processing, or optimizing API performance.",
+      "description": "Use when building Laravel 10+ applications, architecting Eloquent models with complex relationships, implementing queue systems for async processing, or optimizing API performance.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/laravel-specialist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=laravel-specialist"
+    },
+    {
+      "name": "legacy-modernizer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when modernizing legacy systems that need incremental migration strategies, technical debt reduction, and risk mitigation while maintaining business continuity.",
+      "description": "Use this agent when modernizing legacy systems that need incremental migration strategies, technical debt reduction, and risk mitigation while maintaining business continuity.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/legacy-modernizer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=legacy-modernizer"
+    },
+    {
+      "name": "legal-advisor",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to draft contracts, review compliance requirements, develop IP protection strategies, or assess legal risks for technology businesses.",
+      "description": "Use this agent when you need to draft contracts, review compliance requirements, develop IP protection strategies, or assess legal risks for technology businesses.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/legal-advisor/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=legal-advisor"
+    },
+    {
+      "name": "license-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when architecting, implementing, or optimizing end-to-end legal licensing systems—from OSI standard selection and dependency compliance pipelines to proprietary deployment and risk monitoring.",
+      "description": "Use this agent when architecting, implementing, or optimizing end-to-end legal licensing systems—from OSI standard selection and dependency compliance pipelines to proprietary deployment and risk monitoring.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/license-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=license-engineer"
+    },
+    {
+      "name": "llm-architect",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when designing LLM systems for production, implementing fine-tuning or RAG architectures, optimizing inference serving infrastructure, or managing multi-model deployments.",
+      "description": "Use when designing LLM systems for production, implementing fine-tuning or RAG architectures, optimizing inference serving infrastructure, or managing multi-model deployments.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/llm-architect/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=llm-architect"
+    },
+    {
+      "name": "m365-admin",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when automating Microsoft 365 administrative tasks including Exchange Online mailbox provisioning, Teams collaboration management, SharePoint site configuration, license lifecycle management, and Graph API-driven identity automation.",
+      "description": "Use when automating Microsoft 365 administrative tasks including Exchange Online mailbox provisioning, Teams collaboration management, SharePoint site configuration, license lifecycle management, and Graph API-driven identity automation.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/m365-admin/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=m365-admin"
+    },
+    {
+      "name": "machine-learning-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to deploy, optimize, or serve machine learning models at scale in production environments.",
+      "description": "Use this agent when you need to deploy, optimize, or serve machine learning models at scale in production environments.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/machine-learning-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=machine-learning-engineer"
+    },
+    {
+      "name": "market-researcher",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to analyze markets, understand consumer behavior, assess competitive landscapes, and size opportunities to inform business strategy and market entry decisions.",
+      "description": "Use this agent when you need to analyze markets, understand consumer behavior, assess competitive landscapes, and size opportunities to inform business strategy and market entry decisions.",
+      "domains": [
+        "Research & Analysis"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "research-analysis"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/market-researcher/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=market-researcher"
+    },
+    {
+      "name": "mcp-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to build, debug, or optimize Model Context Protocol (MCP) servers and clients that connect AI systems to external tools and data sources.",
+      "description": "Use this agent when you need to build, debug, or optimize Model Context Protocol (MCP) servers and clients that connect AI systems to external tools and data sources.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/mcp-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=mcp-developer"
+    },
+    {
+      "name": "microservices-architect",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when designing distributed system architecture, decomposing monolithic applications into independent microservices, or establishing communication patterns between services at scale.",
+      "description": "Use when designing distributed system architecture, decomposing monolithic applications into independent microservices, or establishing communication patterns between services at scale.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/microservices-architect/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=microservices-architect"
+    },
+    {
+      "name": "ml-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building production ML systems requiring model training pipelines, model serving infrastructure, performance optimization, and automated retraining.",
+      "description": "Use this agent when building production ML systems requiring model training pipelines, model serving infrastructure, performance optimization, and automated retraining.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/ml-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=ml-engineer"
+    },
+    {
+      "name": "mlops-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design and implement ML infrastructure, set up CI/CD for machine learning models, establish model versioning systems, or optimize ML platforms for reliability and automation. Invoke this agent to build production-grade experiment tracking, implement automated training pipelines, configure GPU resource orchestration, and establish operational monitoring for ML sys...",
+      "description": "Use this agent when you need to design and implement ML infrastructure, set up CI/CD for machine learning models, establish model versioning systems, or optimize ML platforms for reliability and automation. Invoke this agent to build production-grade experiment tracking, implement automated training pipelines, configure GPU resource orchestration, and establish operational monitoring for ML sys...",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/mlops-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=mlops-engineer"
+    },
+    {
+      "name": "mobile-app-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when developing iOS and Android mobile applications with focus on native or cross-platform implementation, performance optimization, and platform-specific user experience.",
+      "description": "Use this agent when developing iOS and Android mobile applications with focus on native or cross-platform implementation, performance optimization, and platform-specific user experience.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/mobile-app-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=mobile-app-developer"
+    },
+    {
+      "name": "mobile-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building cross-platform mobile applications requiring native performance optimization, platform-specific features, and offline-first architecture. Use for React Native and Flutter projects where code sharing must exceed 80% while maintaining iOS and Android native excellence.",
+      "description": "Use this agent when building cross-platform mobile applications requiring native performance optimization, platform-specific features, and offline-first architecture. Use for React Native and Flutter projects where code sharing must exceed 80% while maintaining iOS and Android native excellence.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/mobile-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=mobile-developer"
+    },
+    {
+      "name": "multi-agent-coordinator",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when coordinating multiple concurrent agents that need to communicate, share state, synchronize work, and handle distributed failures across a system.",
+      "description": "Use when coordinating multiple concurrent agents that need to communicate, share state, synchronize work, and handle distributed failures across a system.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/multi-agent-coordinator/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=multi-agent-coordinator"
+    },
+    {
+      "name": "network-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when designing, optimizing, or troubleshooting cloud and hybrid network infrastructures, or when addressing network security, performance, or reliability challenges.",
+      "description": "Use this agent when designing, optimizing, or troubleshooting cloud and hybrid network infrastructures, or when addressing network security, performance, or reliability challenges.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/network-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=network-engineer"
+    },
+    {
+      "name": "nextjs-developer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building production Next.js 14+ applications that require full-stack development with App Router, server components, and advanced performance optimization. Invoke when you need to architect or implement complete Next.js applications, optimize Core Web Vitals, implement server actions and mutations, or deploy SEO-optimized applications.",
+      "description": "Use this agent when building production Next.js 14+ applications that require full-stack development with App Router, server components, and advanced performance optimization. Invoke when you need to architect or implement complete Next.js applications, optimize Core Web Vitals, implement server actions and mutations, or deploy SEO-optimized applications.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/nextjs-developer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=nextjs-developer"
+    },
+    {
+      "name": "nlp-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building production NLP systems, implementing text processing pipelines, developing language models, or solving domain-specific NLP tasks like named entity recognition, sentiment analysis, or machine translation.",
+      "description": "Use when building production NLP systems, implementing text processing pipelines, developing language models, or solving domain-specific NLP tasks like named entity recognition, sentiment analysis, or machine translation.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/nlp-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=nlp-engineer"
+    },
+    {
+      "name": "payment-integration",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when implementing payment systems, integrating payment gateways, or handling financial transactions that require PCI compliance, fraud prevention, and secure transaction processing.",
+      "description": "Use this agent when implementing payment systems, integrating payment gateways, or handling financial transactions that require PCI compliance, fraud prevention, and secure transaction processing.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/payment-integration/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=payment-integration"
+    },
+    {
+      "name": "penetration-tester",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to conduct authorized security penetration tests to identify real vulnerabilities through active exploitation and validation. Use penetration-tester for offensive security testing, vulnerability exploitation, and hands-on risk demonstration.",
+      "description": "Use this agent when you need to conduct authorized security penetration tests to identify real vulnerabilities through active exploitation and validation. Use penetration-tester for offensive security testing, vulnerability exploitation, and hands-on risk demonstration.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/penetration-tester/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=penetration-tester"
+    },
+    {
+      "name": "performance-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to identify and eliminate performance bottlenecks in applications, databases, or infrastructure systems, and when baseline performance metrics need improvement.",
+      "description": "Use this agent when you need to identify and eliminate performance bottlenecks in applications, databases, or infrastructure systems, and when baseline performance metrics need improvement.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/performance-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=performance-engineer"
+    },
+    {
+      "name": "performance-monitor",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when establishing observability infrastructure to track system metrics, detect performance anomalies, and optimize resource usage across multi-agent environments.",
+      "description": "Use when establishing observability infrastructure to track system metrics, detect performance anomalies, and optimize resource usage across multi-agent environments.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/performance-monitor/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=performance-monitor"
+    },
+    {
+      "name": "php-pro",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when working with PHP 8.3+ projects that require strict typing, modern language features, and enterprise framework expertise (Laravel or Symfony). Use when building scalable applications, optimizing performance, or requiring async/Fiber patterns.",
+      "description": "Use this agent when working with PHP 8.3+ projects that require strict typing, modern language features, and enterprise framework expertise (Laravel or Symfony). Use when building scalable applications, optimizing performance, or requiring async/Fiber patterns.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/php-pro/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=php-pro"
+    },
+    {
+      "name": "platform-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building or improving internal developer platforms (IDPs), designing self-service infrastructure, or optimizing developer workflows to reduce friction and accelerate delivery. The platform-engineer agent specializes in designing platform architecture, implementing golden paths, and maximizing developer self-service capabilities.",
+      "description": "Use when building or improving internal developer platforms (IDPs), designing self-service infrastructure, or optimizing developer workflows to reduce friction and accelerate delivery. The platform-engineer agent specializes in designing platform architecture, implementing golden paths, and maximizing developer self-service capabilities.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/platform-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=platform-engineer"
+    },
+    {
+      "name": "postgres-pro",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when you need to optimize PostgreSQL performance, design high-availability replication, or troubleshoot database issues at scale. Invoke this agent for query optimization, configuration tuning, replication setup, backup strategies, and mastering advanced PostgreSQL features for enterprise deployments.",
+      "description": "Use when you need to optimize PostgreSQL performance, design high-availability replication, or troubleshoot database issues at scale. Invoke this agent for query optimization, configuration tuning, replication setup, backup strategies, and mastering advanced PostgreSQL features for enterprise deployments.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/postgres-pro/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=postgres-pro"
+    },
+    {
+      "name": "powershell-5.1-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when automating Windows infrastructure tasks requiring PowerShell 5.1 scripts with RSAT modules for Active Directory, DNS, DHCP, GPO management, or when building safe, enterprise-grade automation workflows in legacy .NET Framework environments.",
+      "description": "Use when automating Windows infrastructure tasks requiring PowerShell 5.1 scripts with RSAT modules for Active Directory, DNS, DHCP, GPO management, or when building safe, enterprise-grade automation workflows in legacy .NET Framework environments.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/powershell-5.1-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=powershell-5.1-expert"
+    },
+    {
+      "name": "powershell-7-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building cross-platform cloud automation scripts, Azure infrastructure orchestration, or CI/CD pipelines requiring PowerShell 7+ with modern .NET interop, idempotent operations, and enterprise-grade error handling.",
+      "description": "Use when building cross-platform cloud automation scripts, Azure infrastructure orchestration, or CI/CD pipelines requiring PowerShell 7+ with modern .NET interop, idempotent operations, and enterprise-grade error handling.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/powershell-7-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=powershell-7-expert"
+    },
+    {
+      "name": "powershell-module-architect",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when architecting and refactoring PowerShell modules, designing profile systems, or creating cross-version compatible automation libraries. Invoke it for module design reviews, profile optimization, packaging reusable code, and standardizing function structure across teams.",
+      "description": "Use this agent when architecting and refactoring PowerShell modules, designing profile systems, or creating cross-version compatible automation libraries. Invoke it for module design reviews, profile optimization, packaging reusable code, and standardizing function structure across teams.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/powershell-module-architect/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=powershell-module-architect"
+    },
+    {
+      "name": "powershell-security-hardening",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to harden PowerShell automation, secure remoting configuration, enforce least-privilege design, or align scripts with enterprise security baselines and compliance frameworks.",
+      "description": "Use this agent when you need to harden PowerShell automation, secure remoting configuration, enforce least-privilege design, or align scripts with enterprise security baselines and compliance frameworks.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/powershell-security-hardening/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=powershell-security-hardening"
+    },
+    {
+      "name": "powershell-ui-architect",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when designing or building desktop graphical interfaces (WinForms, WPF, Metro-style dashboards) or terminal user interfaces (TUIs) for PowerShell automation tools that need clean separation between UI and business logic.",
+      "description": "Use when designing or building desktop graphical interfaces (WinForms, WPF, Metro-style dashboards) or terminal user interfaces (TUIs) for PowerShell automation tools that need clean separation between UI and business logic.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/powershell-ui-architect/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=powershell-ui-architect"
+    },
+    {
+      "name": "product-manager",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to make product strategy decisions, prioritize features, or define roadmap plans based on user needs and business goals.",
+      "description": "Use this agent when you need to make product strategy decisions, prioritize features, or define roadmap plans based on user needs and business goals.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/product-manager/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=product-manager"
+    },
+    {
+      "name": "project-idea-validator",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need an idea pressure-tested with brutal honesty, competitor teardown, market validation, and clear go/no-go guidance before building.",
+      "description": "Use this agent when you need an idea pressure-tested with brutal honesty, competitor teardown, market validation, and clear go/no-go guidance before building.",
+      "domains": [
+        "Research & Analysis"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "research-analysis"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/project-idea-validator/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=project-idea-validator"
+    },
+    {
+      "name": "project-manager",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to establish project plans, track execution progress, manage risks, control budget/schedule, and coordinate stakeholders across complex initiatives.",
+      "description": "Use this agent when you need to establish project plans, track execution progress, manage risks, control budget/schedule, and coordinate stakeholders across complex initiatives.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/project-manager/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=project-manager"
+    },
+    {
+      "name": "prompt-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design, optimize, test, or evaluate prompts for large language models in production systems.",
+      "description": "Use this agent when you need to design, optimize, test, or evaluate prompts for large language models in production systems.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/prompt-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=prompt-engineer"
+    },
+    {
+      "name": "python-pro",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to build type-safe, production-ready Python code for web APIs, system utilities, or complex applications requiring modern async patterns and extensive type coverage.",
+      "description": "Use this agent when you need to build type-safe, production-ready Python code for web APIs, system utilities, or complex applications requiring modern async patterns and extensive type coverage.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/python-pro/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=python-pro"
+    },
+    {
+      "name": "qa-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need comprehensive quality assurance strategy, test planning across the entire development cycle, or quality metrics analysis to improve overall software quality.",
+      "description": "Use this agent when you need comprehensive quality assurance strategy, test planning across the entire development cycle, or quality metrics analysis to improve overall software quality.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/qa-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=qa-expert"
+    },
+    {
+      "name": "quant-analyst",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to develop quantitative trading strategies, build financial models with rigorous mathematical foundations, or conduct advanced risk analytics for derivatives and portfolios. Invoke this agent for statistical arbitrage strategy development, backtesting with historical validation, derivatives pricing models, and portfolio risk assessment.",
+      "description": "Use this agent when you need to develop quantitative trading strategies, build financial models with rigorous mathematical foundations, or conduct advanced risk analytics for derivatives and portfolios. Invoke this agent for statistical arbitrage strategy development, backtesting with historical validation, derivatives pricing models, and portfolio risk assessment.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/quant-analyst/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=quant-analyst"
+    },
+    {
+      "name": "rails-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building or modernizing Rails applications requiring API development, Hotwire reactivity, real-time features, background job processing, deployment automation, or Rails-idiomatic patterns for maximum productivity. Version-aware: adapts to Rails 7.x and 8.x projects.",
+      "description": "Use when building or modernizing Rails applications requiring API development, Hotwire reactivity, real-time features, background job processing, deployment automation, or Rails-idiomatic patterns for maximum productivity. Version-aware: adapts to Rails 7.x and 8.x projects.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/rails-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=rails-expert"
+    },
+    {
+      "name": "react-specialist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when optimizing existing React applications for performance, implementing advanced React 18+ features, or solving complex state management and architectural challenges within React codebases.",
+      "description": "Use when optimizing existing React applications for performance, implementing advanced React 18+ features, or solving complex state management and architectural challenges within React codebases.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/react-specialist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=react-specialist"
+    },
+    {
+      "name": "readme-generator",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need a maintainer-ready README built from exact repository reality, with deep codebase scanning, zero hallucination, and optional git commit/push only when explicitly requested.",
+      "description": "Use this agent when you need a maintainer-ready README built from exact repository reality, with deep codebase scanning, zero hallucination, and optional git commit/push only when explicitly requested.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/readme-generator/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=readme-generator"
+    },
+    {
+      "name": "refactoring-specialist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when you need to transform poorly structured, complex, or duplicated code into clean, maintainable systems while preserving all existing behavior.",
+      "description": "Use when you need to transform poorly structured, complex, or duplicated code into clean, maintainable systems while preserving all existing behavior.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/refactoring-specialist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=refactoring-specialist"
+    },
+    {
+      "name": "reinforcement-learning-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when designing RL environments, training agents with reward optimization, implementing policy gradient methods, or deploying decision-making systems for robotics, gaming, and autonomous operations.",
+      "description": "Use when designing RL environments, training agents with reward optimization, implementing policy gradient methods, or deploying decision-making systems for robotics, gaming, and autonomous operations.",
+      "domains": [
+        "Data & AI"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "data-ai"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/reinforcement-learning-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=reinforcement-learning-engineer"
+    },
+    {
+      "name": "research-analyst",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need comprehensive research across multiple sources with synthesis of findings into actionable insights, trend identification, and detailed reporting.",
+      "description": "Use this agent when you need comprehensive research across multiple sources with synthesis of findings into actionable insights, trend identification, and detailed reporting.",
+      "domains": [
+        "Research & Analysis"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "research-analysis"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/research-analyst/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=research-analyst"
+    },
+    {
+      "name": "risk-manager",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to identify, quantify, and mitigate enterprise-level risks across financial, operational, regulatory, and strategic domains. Invoke this agent when you need to assess risk exposure, design control frameworks, validate risk models, or ensure regulatory compliance.",
+      "description": "Use this agent when you need to identify, quantify, and mitigate enterprise-level risks across financial, operational, regulatory, and strategic domains. Invoke this agent when you need to assess risk exposure, design control frameworks, validate risk models, or ensure regulatory compliance.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/risk-manager/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=risk-manager"
+    },
+    {
+      "name": "rust-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building Rust systems where memory safety, ownership patterns, zero-cost abstractions, and performance optimization are critical for systems programming, embedded development, async applications, or high-performance services.",
+      "description": "Use when building Rust systems where memory safety, ownership patterns, zero-cost abstractions, and performance optimization are critical for systems programming, embedded development, async applications, or high-performance services.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/rust-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=rust-engineer"
+    },
+    {
+      "name": "sales-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to conduct technical pre-sales activities including solution architecture, proof-of-concept development, and technical demonstrations for complex sales deals.",
+      "description": "Use this agent when you need to conduct technical pre-sales activities including solution architecture, proof-of-concept development, and technical demonstrations for complex sales deals.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/sales-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=sales-engineer"
+    },
+    {
+      "name": "scientific-literature-researcher",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when you need to search scientific literature and retrieve structured experimental data from published studies. Invoke this agent when the task requires evidence-grounded answers from full-text research papers, including methods, results, sample sizes, and quality scores.",
+      "description": "Use when you need to search scientific literature and retrieve structured experimental data from published studies. Invoke this agent when the task requires evidence-grounded answers from full-text research papers, including methods, results, sample sizes, and quality scores.",
+      "domains": [
+        "Research & Analysis"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "research-analysis"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/scientific-literature-researcher/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=scientific-literature-researcher"
+    },
+    {
+      "name": "scrum-master",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when teams need facilitation, process optimization, velocity improvement, or agile ceremony management—especially for sprint planning, retrospectives, impediment removal, and scaling agile practices across multiple teams.",
+      "description": "Use when teams need facilitation, process optimization, velocity improvement, or agile ceremony management—especially for sprint planning, retrospectives, impediment removal, and scaling agile practices across multiple teams.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/scrum-master/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=scrum-master"
+    },
+    {
+      "name": "search-specialist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when you need to find specific information across multiple sources using advanced search strategies, query optimization, and targeted information retrieval. Invoke this agent when the priority is locating precise, relevant results efficiently rather than analyzing or synthesizing content.",
+      "description": "Use when you need to find specific information across multiple sources using advanced search strategies, query optimization, and targeted information retrieval. Invoke this agent when the priority is locating precise, relevant results efficiently rather than analyzing or synthesizing content.",
+      "domains": [
+        "Research & Analysis"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "research-analysis"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/search-specialist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=search-specialist"
+    },
+    {
+      "name": "security-auditor",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when conducting comprehensive security audits, compliance assessments, or risk evaluations across systems, infrastructure, and processes. Invoke when you need systematic vulnerability analysis, compliance gap identification, or evidence-based security findings.",
+      "description": "Use this agent when conducting comprehensive security audits, compliance assessments, or risk evaluations across systems, infrastructure, and processes. Invoke when you need systematic vulnerability analysis, compliance gap identification, or evidence-based security findings.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/security-auditor/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=security-auditor"
+    },
+    {
+      "name": "security-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when implementing comprehensive security solutions across infrastructure, building automated security controls into CI/CD pipelines, or establishing compliance and vulnerability management programs. Invoke for threat modeling, zero-trust architecture design, security automation implementation, and shifting security left into development workflows.",
+      "description": "Use this agent when implementing comprehensive security solutions across infrastructure, building automated security controls into CI/CD pipelines, or establishing compliance and vulnerability management programs. Invoke for threat modeling, zero-trust architecture design, security automation implementation, and shifting security left into development workflows.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/security-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=security-engineer"
+    },
+    {
+      "name": "seo-specialist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need comprehensive SEO optimization encompassing technical audits, keyword strategy, content optimization, and search rankings improvement.",
+      "description": "Use this agent when you need comprehensive SEO optimization encompassing technical audits, keyword strategy, content optimization, and search rankings improvement.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "specialized-domains"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/seo-specialist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=seo-specialist"
+    },
+    {
+      "name": "slack-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when developing Slack applications, implementing Slack API integrations, or reviewing Slack bot code for security and best practices.",
+      "description": "Use this agent when developing Slack applications, implementing Slack API integrations, or reviewing Slack bot code for security and best practices.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/slack-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=slack-expert"
+    },
+    {
+      "name": "spring-boot-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building enterprise Spring Boot 3+ applications requiring microservices architecture, cloud-native deployment, or reactive programming patterns.",
+      "description": "Use this agent when building enterprise Spring Boot 3+ applications requiring microservices architecture, cloud-native deployment, or reactive programming patterns.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/spring-boot-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=spring-boot-engineer"
+    },
+    {
+      "name": "sql-pro",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to optimize complex SQL queries, design efficient database schemas, or solve performance issues across PostgreSQL, MySQL, SQL Server, and Oracle requiring advanced query optimization, index strategies, or data warehouse patterns.",
+      "description": "Use this agent when you need to optimize complex SQL queries, design efficient database schemas, or solve performance issues across PostgreSQL, MySQL, SQL Server, and Oracle requiring advanced query optimization, index strategies, or data warehouse patterns.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/sql-pro/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=sql-pro"
+    },
+    {
+      "name": "sre-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to establish or improve system reliability through SLO definition, error budget management, and automation. Invoke when implementing SLI/SLO frameworks, reducing operational toil, designing fault-tolerant systems, conducting chaos engineering, or optimizing incident response processes.",
+      "description": "Use this agent when you need to establish or improve system reliability through SLO definition, error budget management, and automation. Invoke when implementing SLI/SLO frameworks, reducing operational toil, designing fault-tolerant systems, conducting chaos engineering, or optimizing incident response processes.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/sre-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=sre-engineer"
+    },
+    {
+      "name": "swift-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building native iOS, macOS, or server-side Swift applications requiring advanced concurrency patterns, protocol-oriented architecture, and Swift-specific optimizations. Invoke for SwiftUI modernization, async/await implementation, actor-based state management, or memory safety concerns.",
+      "description": "Use this agent when building native iOS, macOS, or server-side Swift applications requiring advanced concurrency patterns, protocol-oriented architecture, and Swift-specific optimizations. Invoke for SwiftUI modernization, async/await implementation, actor-based state management, or memory safety concerns.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/swift-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=swift-expert"
+    },
+    {
+      "name": "symfony-specialist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building Symfony 6+/7+/8+ applications, architecting Doctrine ORM entities with complex relationships, implementing Messenger component for async processing, or optimizing API Platform performance.",
+      "description": "Use when building Symfony 6+/7+/8+ applications, architecting Doctrine ORM entities with complex relationships, implementing Messenger component for async processing, or optimizing API Platform performance.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/symfony-specialist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=symfony-specialist"
+    },
+    {
+      "name": "task-distributor",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when distributing tasks across multiple agents or workers, managing queues, and balancing workloads to maximize throughput while respecting priorities and deadlines.",
+      "description": "Use when distributing tasks across multiple agents or workers, managing queues, and balancing workloads to maximize throughput while respecting priorities and deadlines.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/task-distributor/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=task-distributor"
+    },
+    {
+      "name": "technical-writer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to create, improve, or maintain technical documentation including API references, user guides, SDK documentation, and getting-started guides.",
+      "description": "Use this agent when you need to create, improve, or maintain technical documentation including API references, user guides, SDK documentation, and getting-started guides.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/technical-writer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=technical-writer"
+    },
+    {
+      "name": "terraform-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when building, refactoring, or scaling infrastructure as code using Terraform with focus on multi-cloud deployments, module architecture, and enterprise-grade state management.",
+      "description": "Use when building, refactoring, or scaling infrastructure as code using Terraform with focus on multi-cloud deployments, module architecture, and enterprise-grade state management.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/terraform-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=terraform-engineer"
+    },
+    {
+      "name": "terragrunt-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Expert Terragrunt specialist mastering infrastructure orchestration, DRY configurations, and multi-environment deployments. Masters stacks, units, dependency management, and scalable IaC patterns with focus on code reuse, maintainability, and enterprise-grade infrastructure automation.",
+      "description": "Expert Terragrunt specialist mastering infrastructure orchestration, DRY configurations, and multi-environment deployments. Masters stacks, units, dependency management, and scalable IaC patterns with focus on code reuse, maintainability, and enterprise-grade infrastructure automation.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/terragrunt-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=terragrunt-expert"
+    },
+    {
+      "name": "test-automator",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to build, implement, or enhance automated test frameworks, create test scripts, or integrate testing into CI/CD pipelines.",
+      "description": "Use this agent when you need to build, implement, or enhance automated test frameworks, create test scripts, or integrate testing into CI/CD pipelines.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/test-automator/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=test-automator"
+    },
+    {
+      "name": "tooling-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to build or enhance developer tools including CLIs, code generators, build tools, and IDE extensions.",
+      "description": "Use this agent when you need to build or enhance developer tools including CLIs, code generators, build tools, and IDE extensions.",
+      "domains": [
+        "Developer Experience"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "developer-experience"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/tooling-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=tooling-engineer"
+    },
+    {
+      "name": "trend-analyst",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when analyzing emerging patterns, predicting industry shifts, or developing future scenarios to inform strategic planning and competitive positioning.",
+      "description": "Use when analyzing emerging patterns, predicting industry shifts, or developing future scenarios to inform strategic planning and competitive positioning.",
+      "domains": [
+        "Research & Analysis"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "research-analysis"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/trend-analyst/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=trend-analyst"
+    },
+    {
+      "name": "typescript-pro",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when implementing TypeScript code requiring advanced type system patterns, complex generics, type-level programming, or end-to-end type safety across full-stack applications.",
+      "description": "Use when implementing TypeScript code requiring advanced type system patterns, complex generics, type-level programming, or end-to-end type safety across full-stack applications.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/typescript-pro/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=typescript-pro"
+    },
+    {
+      "name": "ui-designer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when designing visual interfaces, creating design systems, building component libraries, or refining user-facing aesthetics requiring expert visual design, interaction patterns, and accessibility considerations.",
+      "description": "Use this agent when designing visual interfaces, creating design systems, building component libraries, or refining user-facing aesthetics requiring expert visual design, interaction patterns, and accessibility considerations.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/ui-designer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=ui-designer"
+    },
+    {
+      "name": "ux-researcher",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to conduct user research, analyze user behavior, or generate actionable insights to validate design decisions and uncover user needs. Invoke when you need usability testing, user interviews, survey design, analytics interpretation, persona development, or competitive research to inform product strategy.",
+      "description": "Use this agent when you need to conduct user research, analyze user behavior, or generate actionable insights to validate design decisions and uncover user needs. Invoke when you need usability testing, user interviews, survey design, analytics interpretation, persona development, or competitive research to inform product strategy.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/ux-researcher/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=ux-researcher"
+    },
+    {
+      "name": "voltagent-code-reviewer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to conduct comprehensive code reviews focusing on code quality, security vulnerabilities, and best practices.",
+      "description": "Use this agent when you need to conduct comprehensive code reviews focusing on code quality, security vulnerabilities, and best practices.",
+      "domains": [
+        "Quality & Security"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "quality-security"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/voltagent-code-reviewer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=voltagent-code-reviewer"
+    },
+    {
+      "name": "vue-expert",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when building Vue 3 applications that require Composition API mastery, reactivity optimization, or Nuxt 3 development with enterprise-scale performance concerns.",
+      "description": "Use this agent when building Vue 3 applications that require Composition API mastery, reactivity optimization, or Nuxt 3 development with enterprise-scale performance concerns.",
+      "domains": [
+        "Language Specialists"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "language-specialists"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/vue-expert/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=vue-expert"
+    },
+    {
+      "name": "websocket-engineer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when implementing real-time bidirectional communication features using WebSockets, Socket.IO, or similar technologies at scale.",
+      "description": "Use this agent when implementing real-time bidirectional communication features using WebSockets, Socket.IO, or similar technologies at scale.",
+      "domains": [
+        "Core Development"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "core-development"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/websocket-engineer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=websocket-engineer"
+    },
+    {
+      "name": "windows-infra-admin",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use when managing Windows Server infrastructure, Active Directory, DNS, DHCP, and Group Policy configurations, especially for enterprise-scale deployments requiring safe automation and compliance validation.",
+      "description": "Use when managing Windows Server infrastructure, Active Directory, DNS, DHCP, and Group Policy configurations, especially for enterprise-scale deployments requiring safe automation and compliance validation.",
+      "domains": [
+        "Infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "infrastructure"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/windows-infra-admin/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=windows-infra-admin"
+    },
+    {
+      "name": "wordpress-master",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to architect, optimize, or troubleshoot WordPress implementations ranging from custom theme/plugin development to enterprise-scale multisite platforms. Invoke this agent for performance optimization, security hardening, headless WordPress APIs, WooCommerce solutions, and scaling WordPress to handle millions of visitors.",
+      "description": "Use this agent when you need to architect, optimize, or troubleshoot WordPress implementations ranging from custom theme/plugin development to enterprise-scale multisite platforms. Invoke this agent for performance optimization, security hardening, headless WordPress APIs, WooCommerce solutions, and scaling WordPress to handle millions of visitors.",
+      "domains": [
+        "Business & Product"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "business-product"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/wordpress-master/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=wordpress-master"
+    },
+    {
+      "name": "workflow-orchestrator",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design, implement, or optimize complex business process workflows with multiple states, error handling, and transaction management.",
+      "description": "Use this agent when you need to design, implement, or optimize complex business process workflows with multiple states, error handling, and transaction management.",
+      "domains": [
+        "Meta & Orchestration"
+      ],
+      "authors": [
+        {
+          "name": "VoltAgent",
+          "github": "VoltAgent",
+          "url": "https://github.com/VoltAgent"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "voltagent",
+        "meta-orchestration"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/workflow-orchestrator/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=workflow-orchestrator"
     }
   ]
 }

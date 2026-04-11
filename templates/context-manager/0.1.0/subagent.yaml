@@ -1,0 +1,58 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: context-manager
+  version: 0.1.0
+  instruction: Use for managing shared state, information retrieval, and data
+    synchronization when multiple agents need coordinated access to context and
+    metadata.
+  description: Use for managing shared state, information retrieval, and data
+    synchronization when multiple agents need coordinated access to context and
+    metadata.
+  domains:
+    - Meta & Orchestration
+  tags:
+    - voltagent
+    - meta-orchestration
+  authors:
+    - name: VoltAgent
+      github: VoltAgent
+      url: https://github.com/VoltAgent
+  license: MIT
+  homepage: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/categories/09-meta-orchestration/context-manager.md
+  repository: https://github.com/VoltAgent/awesome-claude-code-subagents
+spec:
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  compatibility:
+    hosts:
+      - claude_code
+    mode: single_host
+    badges:
+      - claude_code
+  artifacts:
+    - guidance
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: sonnet
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Glob
+      - Grep
+
