@@ -1,0 +1,48 @@
+name: Publish npm Package
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/publish-npm.yml'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'README.md'
+      - 'scripts/**'
+      - 'site/**'
+      - 'templates/**'
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: publish-spwnr-registry
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.14.0
+          registry-url: https://registry.npmjs.org
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate templates
+        run: npm run validate:templates
+
+      - name: Build registry package
+        run: npm run build
+
+      - name: Publish missing version
+        run: node ./scripts/publish-package.mjs

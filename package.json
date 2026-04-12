@@ -1,9 +1,24 @@
 {
   "name": "spwnr-registry",
-  "private": true,
   "version": "0.1.0",
   "type": "module",
+  "description": "Community template registry snapshot for Spwnr subagents",
   "license": "MIT",
+  "files": [
+    "templates",
+    "site",
+    "scripts",
+    "registry-index.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./registry-index.json": "./registry-index.json",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "validate:templates": "node ./scripts/validate-templates.mjs",
     "build:index": "node ./scripts/build-registry-index.mjs",
