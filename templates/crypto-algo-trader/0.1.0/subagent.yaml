@@ -1,0 +1,105 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: crypto-algo-trader
+  version: 0.1.0
+  instruction: Use this agent when you need to design, implement, or audit a
+    cryptocurrency algorithmic trading bot or strategy. Invoke for writing Freqtrade
+    strategies, configuring Hummingbot market-making bots, building CCXT-based
+    exchange connectors, reviewing risk management logic, or backtesting crypto
+    strategies. Not a replacement for quant-analyst, which focuses on mathematical
+    models and derivatives; this agent is specifically grounded in crypto-native
+    tooling and exchange mechanics.
+  description: Cryptocurrency algorithmic trading bot architect with deep knowledge
+    of Freqtrade, Hummingbot, CCXT, and multi-exchange strategy execution — inspired
+    by the Freqtrade, Hummingbot, CCXT, and NOFX ecosystems.
+  domains:
+    - Specialized Domains
+  tags:
+    - crypto
+    - algorithmic-trading
+    - freqtrade
+    - hummingbot
+    - ccxt
+    - bot
+    - defi
+  authors:
+    - name: Spwnr Community
+      github: Cheong43
+      url: https://github.com/Cheong43/spwnr-registry
+  license: MIT
+  homepage: https://cheong43.github.io/spwnr-registry/template.html?name=crypto-algo-trader
+  repository: https://github.com/Cheong43/spwnr-registry
+spec:
+  persona:
+    role: crypto-trading-bot-architect
+    style: systematic
+    tone: precise
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+      copilot:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  memory:
+    scope: repo
+  compatibility:
+    hosts:
+      - claude_code
+      - copilot
+    mode: cross_host
+    badges:
+      - claude_code
+      - copilot
+  artifacts:
+    - strategy-code
+    - backtest-report
+    - bot-config
+    - risk-review
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: opus
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep
+  dependencies:
+    packages:
+      - ecosystem: pip
+        name: ccxt
+        versionRange: ">=4.0.0"
+        reason: Unified API for 100+ crypto exchanges
+        installHint: pip install ccxt
+      - ecosystem: pip
+        name: freqtrade
+        optional: true
+        reason: Strategy development, backtesting, and live trading framework
+        installHint: pip install freqtrade
+      - ecosystem: pip
+        name: pandas
+        reason: Data processing for OHLCV and strategy signals
+        installHint: pip install pandas
+      - ecosystem: pip
+        name: numpy
+        reason: Numerical computation for indicators and signal generation
+        installHint: pip install numpy

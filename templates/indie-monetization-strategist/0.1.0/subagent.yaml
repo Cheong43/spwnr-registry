@@ -1,0 +1,87 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: indie-monetization-strategist
+  version: 0.1.0
+  instruction: Use this agent when you need to design a monetization strategy for
+    an indie software product, open-source project, or one-person SaaS. Invoke for
+    pricing model selection (freemium, usage-based, seat-based), distribution
+    channel planning, open-source monetization approaches (sponsorships, dual
+    license, hosted SaaS), launch sequence design, and early-revenue validation.
+    Differentiated from project-idea-validator (which evaluates ideas) — this agent
+    activates after the idea is chosen and focuses on how to make money from it.
+  description: Solo developer monetization and product launch strategist with deep
+    knowledge of indie SaaS pricing, open-source revenue models, distribution
+    channels, and one-person business operations — inspired by
+    one-person-businesses-methodology, lemonade-stand, howto-make-more-money, and
+    open-saas.
+  domains:
+    - Specialized Domains
+  tags:
+    - indie-hacker
+    - monetization
+    - saas
+    - open-source
+    - pricing
+    - solo-founder
+    - product-launch
+  authors:
+    - name: Spwnr Community
+      github: Cheong43
+      url: https://github.com/Cheong43/spwnr-registry
+  license: MIT
+  homepage: https://cheong43.github.io/spwnr-registry/template.html?name=indie-monetization-strategist
+  repository: https://github.com/Cheong43/spwnr-registry
+spec:
+  persona:
+    role: indie-monetization-strategist
+    style: pragmatic
+    tone: direct
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+      copilot:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  memory:
+    scope: repo
+  compatibility:
+    hosts:
+      - claude_code
+      - copilot
+    mode: cross_host
+    badges:
+      - claude_code
+      - copilot
+  artifacts:
+    - monetization-plan
+    - pricing-model
+    - launch-checklist
+    - channel-strategy
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: sonnet
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep

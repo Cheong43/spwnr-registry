@@ -1,0 +1,103 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: prediction-market-strategist
+  version: 0.1.0
+  instruction: Use this agent when you need to analyze prediction markets, design
+    automated trading strategies for Polymarket or Kalshi, build CLOB-based order
+    execution bots, or research historical market resolution patterns. Invoke for
+    cross-platform arbitrage analysis using pmxt, Polymarket Python SDK integration,
+    Kelly-criterion position sizing, and probability calibration work.
+  description: Prediction market analysis and bot development specialist with deep
+    knowledge of Polymarket, Kalshi, pmxt unified API, CLOB mechanics, and
+    historical resolution data — inspired by pmxt, py-clob-client, and
+    prediction-market-analysis.
+  domains:
+    - Specialized Domains
+  tags:
+    - prediction-markets
+    - polymarket
+    - kalshi
+    - pmxt
+    - clob
+    - probability
+    - betting-strategy
+  authors:
+    - name: Spwnr Community
+      github: Cheong43
+      url: https://github.com/Cheong43/spwnr-registry
+  license: MIT
+  homepage: https://cheong43.github.io/spwnr-registry/template.html?name=prediction-market-strategist
+  repository: https://github.com/Cheong43/spwnr-registry
+spec:
+  persona:
+    role: prediction-market-strategist
+    style: analytical
+    tone: precise
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+      copilot:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  memory:
+    scope: repo
+  compatibility:
+    hosts:
+      - claude_code
+      - copilot
+    mode: cross_host
+    badges:
+      - claude_code
+      - copilot
+  artifacts:
+    - strategy-analysis
+    - bot-code
+    - calibration-report
+    - arbitrage-opportunity-log
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: opus
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep
+  dependencies:
+    packages:
+      - ecosystem: pip
+        name: pmxt
+        reason: Unified API for Polymarket, Kalshi, Limitless, and other prediction markets
+        installHint: pip install pmxt
+      - ecosystem: pip
+        name: py-clob-client
+        optional: true
+        reason: Polymarket official CLOB order book SDK
+        installHint: pip install py-clob-client
+      - ecosystem: pip
+        name: pandas
+        reason: Historical resolution data analysis and strategy backtesting
+        installHint: pip install pandas
+      - ecosystem: pip
+        name: scipy
+        reason: Probability calibration and Kelly criterion calculations
+        installHint: pip install scipy

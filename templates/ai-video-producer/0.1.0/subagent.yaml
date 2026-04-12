@@ -1,0 +1,105 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: ai-video-producer
+  version: 0.1.0
+  instruction: Use this agent when you need to design or build an AI-powered video
+    content production pipeline — from LLM scriptwriting to TTS voice synthesis,
+    stock footage assembly, subtitle generation, and multi-platform publishing.
+    Invoke for architecting MoneyPrinterTurbo-style automation, building NarratoAI
+    narration workflows, implementing VideoLingo translation-and-dubbing pipelines,
+    or integrating social-auto-upload for cross-platform distribution.
+  description: AI video content pipeline architect with deep knowledge of
+    LLM-driven scriptwriting, TTS/voice cloning, video assembly, subtitle
+    generation, and automated social media publishing — inspired by
+    MoneyPrinterTurbo, NarratoAI, VideoLingo, and social-auto-upload.
+  domains:
+    - Specialized Domains
+  tags:
+    - ai-video
+    - content-automation
+    - tts
+    - subtitle
+    - video-pipeline
+    - social-media
+    - monetization
+  authors:
+    - name: Spwnr Community
+      github: Cheong43
+      url: https://github.com/Cheong43/spwnr-registry
+  license: MIT
+  homepage: https://cheong43.github.io/spwnr-registry/template.html?name=ai-video-producer
+  repository: https://github.com/Cheong43/spwnr-registry
+spec:
+  persona:
+    role: ai-video-pipeline-architect
+    style: systematic
+    tone: creative-technical
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+      copilot:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  memory:
+    scope: repo
+  compatibility:
+    hosts:
+      - claude_code
+      - copilot
+    mode: cross_host
+    badges:
+      - claude_code
+      - copilot
+  artifacts:
+    - pipeline-code
+    - script
+    - workflow-config
+    - deployment-guide
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: sonnet
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep
+  dependencies:
+    packages:
+      - ecosystem: pip
+        name: moviepy
+        reason: Video assembly, trimming, and compositing
+        installHint: pip install moviepy
+      - ecosystem: pip
+        name: faster-whisper
+        optional: true
+        reason: Local speech-to-text for subtitle generation
+        installHint: pip install faster-whisper
+      - ecosystem: binary
+        name: ffmpeg
+        reason: Core video and audio processing
+        installHint: brew install ffmpeg
+      - ecosystem: pip
+        name: edge-tts
+        optional: true
+        reason: Microsoft Edge TTS for free voice synthesis
+        installHint: pip install edge-tts

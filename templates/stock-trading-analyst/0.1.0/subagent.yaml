@@ -1,0 +1,100 @@
+apiVersion: spwnr/v0.3
+kind: Subagent
+metadata:
+  name: stock-trading-analyst
+  version: 0.1.0
+  instruction: Use this agent when you need multi-perspective investment analysis
+    on equities — covering fundamentals (value, growth, quality), technical chart
+    patterns, and news/sentiment signals simultaneously. Invoke for stock research
+    pipelines, investment thesis writing, screening strategies, and portfolio review.
+    Not a replacement for quant-analyst, which develops mathematical strategies and
+    backtesting engines; this agent focuses on qualitative + data-driven investment
+    reasoning.
+  description: Multi-perspective equity analyst combining fundamental, technical,
+    and sentiment analysis — inspired by the TradingAgents multi-agent framework and
+    ai-hedge-fund investor personas.
+  domains:
+    - Specialized Domains
+  tags:
+    - finance
+    - stock-analysis
+    - investment
+    - multi-agent
+    - fundamental-analysis
+    - technical-analysis
+    - sentiment
+  authors:
+    - name: Spwnr Community
+      github: Cheong43
+      url: https://github.com/Cheong43/spwnr-registry
+  license: MIT
+  homepage: https://cheong43.github.io/spwnr-registry/template.html?name=stock-trading-analyst
+  repository: https://github.com/Cheong43/spwnr-registry
+spec:
+  persona:
+    role: senior-equity-analyst
+    style: systematic
+    tone: analytical
+  agent:
+    path: ./agent.md
+  injection:
+    hosts:
+      claude_code:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+      copilot:
+        static:
+          enabled: true
+          defaultScope: project
+        session:
+          enabled: true
+          defaultScope: user
+  memory:
+    scope: repo
+  compatibility:
+    hosts:
+      - claude_code
+      - copilot
+    mode: cross_host
+    badges:
+      - claude_code
+      - copilot
+  artifacts:
+    - investment-thesis
+    - screening-report
+    - risk-assessment
+  modelBinding:
+    mode: injectable
+    defaultProvider: anthropic
+    defaultModel: opus
+    allowOverride: true
+    billing:
+      mode: passthrough
+  tools:
+    allow:
+      - Read
+      - Write
+      - Edit
+      - Bash
+      - Glob
+      - Grep
+  dependencies:
+    packages:
+      - ecosystem: pip
+        name: yfinance
+        versionRange: ">=0.2.0"
+        reason: Pull stock price history, fundamentals, and financial statements
+        installHint: pip install yfinance
+      - ecosystem: pip
+        name: pandas
+        reason: Data manipulation for financial time series
+        installHint: pip install pandas
+      - ecosystem: pip
+        name: ta-lib
+        optional: true
+        reason: Technical analysis indicators (RSI, MACD, Bollinger Bands)
+        installHint: pip install ta-lib
