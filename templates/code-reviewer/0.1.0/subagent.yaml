@@ -1,4 +1,4 @@
-apiVersion: subagent.io/v0.2
+apiVersion: spwnr/v1
 kind: Subagent
 metadata:
   name: code-reviewer
