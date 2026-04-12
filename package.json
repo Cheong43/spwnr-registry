@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "validate:templates": "node ./scripts/validate-templates.mjs",
     "build:index": "node ./scripts/build-registry-index.mjs",
