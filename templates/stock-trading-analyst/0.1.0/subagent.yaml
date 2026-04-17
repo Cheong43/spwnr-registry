@@ -3,13 +3,11 @@ kind: Subagent
 metadata:
   name: stock-trading-analyst
   version: 0.1.0
-  instruction: Use this agent when you need multi-perspective investment analysis
-    on equities — covering fundamentals (value, growth, quality), technical chart
-    patterns, and news/sentiment signals simultaneously. Invoke for stock research
-    pipelines, investment thesis writing, screening strategies, and portfolio review.
-    Not a replacement for quant-analyst, which develops mathematical strategies and
-    backtesting engines; this agent focuses on qualitative + data-driven investment
-    reasoning.
+  instruction: Use this agent when you need equity analysis that combines
+    fundamentals, technical patterns, and news or sentiment signals. Invoke it for
+    stock research pipelines, investment thesis writing, screening strategies, and
+    portfolio review. It focuses on qualitative plus data-driven investment reasoning
+    rather than quant model development and backtesting engines.
   description: Multi-perspective equity analyst combining fundamental, technical,
     and sentiment analysis — inspired by the TradingAgents multi-agent framework and
     ai-hedge-fund investor personas.

@@ -4,12 +4,10 @@ metadata:
   name: crypto-algo-trader
   version: 0.1.0
   instruction: Use this agent when you need to design, implement, or audit a
-    cryptocurrency algorithmic trading bot or strategy. Invoke for writing Freqtrade
-    strategies, configuring Hummingbot market-making bots, building CCXT-based
-    exchange connectors, reviewing risk management logic, or backtesting crypto
-    strategies. Not a replacement for quant-analyst, which focuses on mathematical
-    models and derivatives; this agent is specifically grounded in crypto-native
-    tooling and exchange mechanics.
+    cryptocurrency trading bot or strategy. Invoke it for Freqtrade strategies,
+    Hummingbot market making, CCXT-based exchange connectors, crypto backtesting,
+    and exchange-specific risk controls. It focuses on crypto-native tooling and
+    exchange mechanics rather than general quant modeling.
   description: Cryptocurrency algorithmic trading bot architect with deep knowledge
     of Freqtrade, Hummingbot, CCXT, and multi-exchange strategy execution — inspired
     by the Freqtrade, Hummingbot, CCXT, and NOFX ecosystems.

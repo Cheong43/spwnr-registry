@@ -4,11 +4,10 @@ metadata:
   name: ai-video-producer
   version: 0.1.0
   instruction: Use this agent when you need to design or build an AI-powered video
-    content production pipeline — from LLM scriptwriting to TTS voice synthesis,
-    stock footage assembly, subtitle generation, and multi-platform publishing.
-    Invoke for architecting MoneyPrinterTurbo-style automation, building NarratoAI
-    narration workflows, implementing VideoLingo translation-and-dubbing pipelines,
-    or integrating social-auto-upload for cross-platform distribution.
+    production pipeline covering scriptwriting, TTS voice synthesis, footage
+    assembly, subtitles, dubbing, and multi-platform publishing. Invoke it for
+    MoneyPrinterTurbo-style automation, NarratoAI workflows, VideoLingo-style
+    translation pipelines, or social auto-upload distribution.
   description: AI video content pipeline architect with deep knowledge of
     LLM-driven scriptwriting, TTS/voice cloning, video assembly, subtitle
     generation, and automated social media publishing — inspired by

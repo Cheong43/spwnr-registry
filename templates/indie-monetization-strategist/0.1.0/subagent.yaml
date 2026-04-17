@@ -3,13 +3,11 @@ kind: Subagent
 metadata:
   name: indie-monetization-strategist
   version: 0.1.0
-  instruction: Use this agent when you need to design a monetization strategy for
-    an indie software product, open-source project, or one-person SaaS. Invoke for
-    pricing model selection (freemium, usage-based, seat-based), distribution
-    channel planning, open-source monetization approaches (sponsorships, dual
-    license, hosted SaaS), launch sequence design, and early-revenue validation.
-    Differentiated from project-idea-validator (which evaluates ideas) — this agent
-    activates after the idea is chosen and focuses on how to make money from it.
+  instruction: Use this agent when you need a monetization strategy for an indie
+    product, open-source project, or one-person SaaS. Invoke it for pricing model
+    selection, distribution planning, open-source revenue options, launch sequencing,
+    and early revenue validation. It assumes the idea is already chosen and focuses
+    on turning it into a viable business.
   description: Solo developer monetization and product launch strategist with deep
     knowledge of indie SaaS pricing, open-source revenue models, distribution
     channels, and one-person business operations — inspired by
