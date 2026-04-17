@@ -25,6 +25,8 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+      NPM_CONFIG_PROVENANCE: true
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -32,7 +34,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: 22.14.0
+          node-version: 24.x
           registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
@@ -45,4 +47,6 @@ jobs:
         run: npm run build
 
       - name: Publish missing version
+        env:
+          NPM_CONFIG_PROVENANCE: true
         run: node ./scripts/publish-package.mjs

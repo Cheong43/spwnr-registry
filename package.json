@@ -1,9 +1,17 @@
 {
-  "name": "spwnr-registry",
-  "version": "0.1.0",
+  "name": "@spwnr/registry",
+  "version": "0.3.0",
   "type": "module",
   "description": "Community template registry snapshot for Spwnr subagents",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cheong43/spwnr-registry.git"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "npm@11.6.2",
   "files": [
     "templates",
     "site",
@@ -17,7 +25,8 @@
     "./package.json": "./package.json"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "scripts": {
     "validate:templates": "node ./scripts/validate-templates.mjs",
