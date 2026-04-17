@@ -1,0 +1,1 @@
+{"version":3,"file":"tarball-service.d.ts","sourceRoot":"","sources":["../src/tarball-service.ts"],"names":[],"mappings":"AAIA,qBAAa,cAAc;IACzB;;;;OAIG;IACG,IAAI,CAAC,SAAS,EAAE,MAAM,EAAE,QAAQ,EAAE,MAAM,GAAG,OAAO,CAAC,IAAI,CAAC;IAY9D;;;;OAIG;IACG,OAAO,CAAC,WAAW,EAAE,MAAM,EAAE,OAAO,EAAE,MAAM,GAAG,OAAO,CAAC,IAAI,CAAC;CAQnE"}

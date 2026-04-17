@@ -1,8 +1,8 @@
 {
-  "name": "spwnr-registry",
+  "name": "@spwnr/registry",
   "version": "0.3.0",
   "type": "module",
-  "description": "Community template registry snapshot for Spwnr subagents",
+  "description": "Runtime registry package plus template registry snapshot for Spwnr subagents",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,7 +13,11 @@
   },
   "provenance": true,
   "packageManager": "npm@11.6.2",
+  "main": "./runtime-dist/index.js",
+  "types": "./runtime-dist/index.d.ts",
   "files": [
+    "runtime-dist",
+    "dist",
     "templates",
     "site",
     "scripts",
@@ -22,6 +26,11 @@
     "LICENSE"
   ],
   "exports": {
+    ".": {
+      "import": "./runtime-dist/index.js",
+      "types": "./runtime-dist/index.d.ts",
+      "default": "./runtime-dist/index.js"
+    },
     "./registry-index.json": "./registry-index.json",
     "./package.json": "./package.json"
   },
@@ -30,12 +39,25 @@
     "provenance": true
   },
   "scripts": {
+    "build:runtime": "node --input-type=module --eval \"import { rmSync } from 'node:fs'; rmSync('runtime-dist', { recursive: true, force: true });\" && tsc -p tsconfig.json",
     "validate:templates": "node ./scripts/validate-templates.mjs",
     "build:index": "node ./scripts/build-registry-index.mjs",
     "build:site": "node ./scripts/build-site.mjs",
-    "build": "npm run build:index && npm run build:site"
+    "build": "npm run build:runtime && npm run build:index && npm run build:site",
+    "test": "vitest run"
   },
   "dependencies": {
+    "@spwnr/core-types": "^0.3.0",
+    "@spwnr/manifest-schema": "^0.3.0",
+    "better-sqlite3": "^12.8.0",
+    "tar": "^7.4.0",
     "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^22.0.0",
+    "@types/tar": "^6.1.13",
+    "typescript": "^5.9.3",
+    "vitest": "^2.0.0"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-11T02:16:14.064Z",
-  "totalTemplates": 141,
+  "generatedAt": "2026-04-17T10:14:46.304Z",
+  "totalTemplates": 146,
   "templates": [
     {
       "name": "accessibility-tester",
@@ -146,6 +146,46 @@
       ],
       "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/ai-engineer/0.1.0",
       "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=ai-engineer"
+    },
+    {
+      "name": "ai-video-producer",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design or build an AI-powered video production pipeline covering scriptwriting, TTS voice synthesis, footage assembly, subtitles, dubbing, and multi-platform publishing. Invoke it for MoneyPrinterTurbo-style automation, NarratoAI workflows, VideoLingo-style translation pipelines, or social auto-upload distribution.",
+      "description": "AI video content pipeline architect with deep knowledge of LLM-driven scriptwriting, TTS/voice cloning, video assembly, subtitle generation, and automated social media publishing — inspired by MoneyPrinterTurbo, NarratoAI, VideoLingo, and social-auto-upload.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "Spwnr Community",
+          "github": "Cheong43",
+          "url": "https://github.com/Cheong43/spwnr-registry"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code",
+        "copilot"
+      ],
+      "dependenciesSummary": [
+        "pip:moviepy",
+        "pip:faster-whisper (optional)",
+        "binary:ffmpeg",
+        "pip:edge-tts (optional)"
+      ],
+      "tags": [
+        "ai-video",
+        "content-automation",
+        "tts",
+        "subtitle",
+        "video-pipeline",
+        "social-media",
+        "monetization"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/ai-video-producer/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=ai-video-producer"
     },
     {
       "name": "ai-writing-auditor",
@@ -702,6 +742,46 @@
       ],
       "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/cpp-pro/0.1.0",
       "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=cpp-pro"
+    },
+    {
+      "name": "crypto-algo-trader",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to design, implement, or audit a cryptocurrency trading bot or strategy. Invoke it for Freqtrade strategies, Hummingbot market making, CCXT-based exchange connectors, crypto backtesting, and exchange-specific risk controls. It focuses on crypto-native tooling and exchange mechanics rather than general quant modeling.",
+      "description": "Cryptocurrency algorithmic trading bot architect with deep knowledge of Freqtrade, Hummingbot, CCXT, and multi-exchange strategy execution — inspired by the Freqtrade, Hummingbot, CCXT, and NOFX ecosystems.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "Spwnr Community",
+          "github": "Cheong43",
+          "url": "https://github.com/Cheong43/spwnr-registry"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code",
+        "copilot"
+      ],
+      "dependenciesSummary": [
+        "pip:ccxt >=4.0.0",
+        "pip:freqtrade (optional)",
+        "pip:pandas",
+        "pip:numpy"
+      ],
+      "tags": [
+        "crypto",
+        "algorithmic-trading",
+        "freqtrade",
+        "hummingbot",
+        "ccxt",
+        "bot",
+        "defi"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/crypto-algo-trader/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=crypto-algo-trader"
     },
     {
       "name": "csharp-developer",
@@ -1746,6 +1826,41 @@
       ],
       "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/incident-responder/0.1.0",
       "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=incident-responder"
+    },
+    {
+      "name": "indie-monetization-strategist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need a monetization strategy for an indie product, open-source project, or one-person SaaS. Invoke it for pricing model selection, distribution planning, open-source revenue options, launch sequencing, and early revenue validation. It assumes the idea is already chosen and focuses on turning it into a viable business.",
+      "description": "Solo developer monetization and product launch strategist with deep knowledge of indie SaaS pricing, open-source revenue models, distribution channels, and one-person business operations — inspired by one-person-businesses-methodology, lemonade-stand, howto-make-more-money, and open-saas.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "Spwnr Community",
+          "github": "Cheong43",
+          "url": "https://github.com/Cheong43/spwnr-registry"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code",
+        "copilot"
+      ],
+      "dependenciesSummary": [],
+      "tags": [
+        "indie-hacker",
+        "monetization",
+        "saas",
+        "open-source",
+        "pricing",
+        "solo-founder",
+        "product-launch"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/indie-monetization-strategist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=indie-monetization-strategist"
     },
     {
       "name": "iot-engineer",
@@ -2821,6 +2936,46 @@
       "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=powershell-ui-architect"
     },
     {
+      "name": "prediction-market-strategist",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need to analyze prediction markets, design automated trading strategies for Polymarket or Kalshi, build CLOB-based order execution bots, or research historical market resolution patterns. Invoke for cross-platform arbitrage analysis using pmxt, Polymarket Python SDK integration, Kelly-criterion position sizing, and probability calibration work.",
+      "description": "Prediction market analysis and bot development specialist with deep knowledge of Polymarket, Kalshi, pmxt unified API, CLOB mechanics, and historical resolution data — inspired by pmxt, py-clob-client, and prediction-market-analysis.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "Spwnr Community",
+          "github": "Cheong43",
+          "url": "https://github.com/Cheong43/spwnr-registry"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code",
+        "copilot"
+      ],
+      "dependenciesSummary": [
+        "pip:pmxt",
+        "pip:py-clob-client (optional)",
+        "pip:pandas",
+        "pip:scipy"
+      ],
+      "tags": [
+        "prediction-markets",
+        "polymarket",
+        "kalshi",
+        "pmxt",
+        "clob",
+        "probability",
+        "betting-strategy"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/prediction-market-strategist/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=prediction-market-strategist"
+    },
+    {
       "name": "product-manager",
       "latestVersion": "0.1.0",
       "versions": [
@@ -3573,6 +3728,45 @@
       ],
       "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/sre-engineer/0.1.0",
       "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=sre-engineer"
+    },
+    {
+      "name": "stock-trading-analyst",
+      "latestVersion": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "instruction": "Use this agent when you need equity analysis that combines fundamentals, technical patterns, and news or sentiment signals. Invoke it for stock research pipelines, investment thesis writing, screening strategies, and portfolio review. It focuses on qualitative plus data-driven investment reasoning rather than quant model development and backtesting engines.",
+      "description": "Multi-perspective equity analyst combining fundamental, technical, and sentiment analysis — inspired by the TradingAgents multi-agent framework and ai-hedge-fund investor personas.",
+      "domains": [
+        "Specialized Domains"
+      ],
+      "authors": [
+        {
+          "name": "Spwnr Community",
+          "github": "Cheong43",
+          "url": "https://github.com/Cheong43/spwnr-registry"
+        }
+      ],
+      "compatibilityHosts": [
+        "claude_code",
+        "copilot"
+      ],
+      "dependenciesSummary": [
+        "pip:yfinance >=0.2.0",
+        "pip:pandas",
+        "pip:ta-lib (optional)"
+      ],
+      "tags": [
+        "finance",
+        "stock-analysis",
+        "investment",
+        "multi-agent",
+        "fundamental-analysis",
+        "technical-analysis",
+        "sentiment"
+      ],
+      "sourcePath": "https://github.com/Cheong43/spwnr-registry/tree/main/templates/stock-trading-analyst/0.1.0",
+      "docsUrl": "https://cheong43.github.io/spwnr-registry/template.html?name=stock-trading-analyst"
     },
     {
       "name": "swift-expert",

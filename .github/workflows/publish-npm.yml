@@ -11,8 +11,11 @@ on:
       - 'package-lock.json'
       - 'README.md'
       - 'scripts/**'
+      - 'src/**'
       - 'site/**'
       - 'templates/**'
+      - 'tsconfig.json'
+      - 'vitest.config.ts'
 
 permissions:
   contents: read
