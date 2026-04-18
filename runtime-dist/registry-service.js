@@ -1,4 +1,3 @@
-import Database from 'better-sqlite3';
 import { openDatabase } from './db.js';
 import { PackageStore } from './package-store.js';
 import { SignatureService } from './signature-service.js';

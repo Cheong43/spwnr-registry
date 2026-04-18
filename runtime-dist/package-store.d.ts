@@ -1,5 +1,5 @@
-import type Database from 'better-sqlite3';
 import type { SubagentManifest } from '@spwnr/core-types';
+import type { SqliteDatabase } from './sqlite.js';
 export interface PackageRow {
     id: string;
     name: string;
@@ -33,7 +33,7 @@ export interface PackageSearchRow {
 }
 export declare class PackageStore {
     private readonly db;
-    constructor(db: Database.Database);
+    constructor(db: SqliteDatabase);
     /** Insert or get a package by name. Returns the package id. */
     upsertPackage(name: string, description?: string): string;
     /** Publish a new version. Throws if version already exists. */
